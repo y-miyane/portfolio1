@@ -1,0 +1,14 @@
+
+html, body {
+    font-size: 11px;
+    color: #000;
+}
+
+html, body {
+    font-family: "Open Sans", YuGothic, "游ゴシック", "MS Ｐゴシック", "MS P Gothic", "MS-PGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, arial, helvetica, clean, sans-serif;
+    position: relative;
+}
+
+html {
+    box-sizing: border-box;
+}
