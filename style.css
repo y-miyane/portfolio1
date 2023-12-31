@@ -3,15 +3,20 @@
 /*---------------------
 header
 -----------------------*/
-header{
-    background-color: blueviolet;
-}
 
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 40px
+}
 
 /*---------------------
 section
 -----------------------*/
-
+.ttl {
+    font-family: "Asap", YuGothic, "游ゴシック", "MS Ｐゴシック", "MS P Gothic", "MS-PGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, arial, helvetica, clean, sans-serif;
+}
 
 /*---------------------
 section_class_menu
@@ -22,7 +27,26 @@ section_class_menu
 section_class_secimg
 -----------------------*/
 
+/*---------------------
+section_sec news
+-----------------------*/
 
+h2 {
+    margin-bottom: 30px;
+}
+
+h2 span {
+    font-size: 1.8rem;
+    letter-spacing: 0.12em;
+}
+
+body.top section.newsblog div.btn {
+    text-align: center;
+}
+
+button.btn2 {
+    margin-top: 4rem;
+}
 
 /*---------------------
 footer
@@ -49,11 +73,17 @@ footer {
 }
 
 h4 {
-    margin-bottom: 2rem;
+    margin-bottom: 30px;
 }
 
 footer div.footer_wrap div.f_nav div.f_nav_box div.txt div.btn button.ftbtn {
     width: 100%;
     margin-top: 1rem;
     position: relative;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 12px;
 }
