@@ -14,6 +14,10 @@ ul {
 /*---------------------
 section
 -----------------------*/
+.tagline{
+    text-align:right
+}
+
 .ttl {
     font-family: "Asap", YuGothic, "游ゴシック", "MS Ｐゴシック", "MS P Gothic", "MS-PGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, arial, helvetica, clean, sans-serif;
 }
@@ -65,11 +69,16 @@ a {
 
 
 body.top section.saloninfo div.secwrap div.txt {
-    position: absolute;
+
     z-index: 10;
     width: 37.5%;
     top: 0;
     left:0;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
 }
 
 /*---------------------
@@ -99,6 +108,7 @@ body.top section.newsblog div.btn {
 
 button.btn2 {
     margin-top: 4rem;
+    text-align: center;
 }
 
 /*---------------------
