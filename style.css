@@ -22,6 +22,33 @@ section
     font-family: "Asap", YuGothic, "游ゴシック", "MS Ｐゴシック", "MS P Gothic", "MS-PGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, arial, helvetica, clean, sans-serif;
 }
 
+
+
+/*---------------------
+section_concept
+-----------------------*/
+
+body.top section.concept div.secwrap div.img div.imgwrap {
+    width: 100%;
+    height: 100%;
+    background: url(./images/concept.jpg) center center no-repeat;
+}
+
+body.top section.concept div.secwrap div.txt {
+    position: absolute;
+    z-index: 10;
+    width: 37.5%;
+    right: 0;
+}
+
+body.top h2 {
+    margin-bottom: 30px;
+}
+
+.hr{
+    text-align: center;
+}
+
 /*---------------------
 section_class_menu
 -----------------------*/
@@ -81,6 +108,25 @@ img {
     overflow: clip;
 }
 
+div.img img {
+    width: 100%;
+    display: block;
+}
+
+.img1 {
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    z-index: 3
+}
+
+.img2 {
+    position: relative;
+    z-index: 0;
+    top: 1rem;
+    right: -1rem;
+}
+
 /*---------------------
 section_class_saloninfo
 -----------------------*/
@@ -88,6 +134,10 @@ section_class_saloninfo
 /*---------------------
 section_class_secimg
 -----------------------*/
+
+.secimg.secwrap.img.imgwrap.img{
+    text-align: center;
+}
 
 /*---------------------
 section_sec news
