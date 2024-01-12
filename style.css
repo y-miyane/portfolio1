@@ -1,8 +1,19 @@
 @charset "UTF-8";
 
+
 /*---------------------
 header
 -----------------------*/
+header .header_wrap {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    line-height: 1px;
+    margin-right: 60px;
+}
 
 
 ul {
@@ -12,14 +23,12 @@ ul {
 }
 
 /*---------------------
-section
+section_mv
 -----------------------*/
-.tagline{
-    text-align:right
-}
-
-.ttl {
-    font-family: "Asap", YuGothic, "游ゴシック", "MS Ｐゴシック", "MS P Gothic", "MS-PGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, arial, helvetica, clean, sans-serif;
+.ci_wrap{
+    width: 100%;
+    height: calc(100vh - 80px);
+    object-fit: cover;
 }
 
 
@@ -128,10 +137,6 @@ div.img img {
 }
 
 /*---------------------
-section_class_saloninfo
------------------------*/
-
-/*---------------------
 section_class_secimg
 -----------------------*/
 
@@ -140,7 +145,18 @@ section_class_secimg
 }
 
 /*---------------------
-section_sec news
+section_class_saloninfo
+-----------------------*/
+
+
+
+/*---------------------
+section_class_style
+-----------------------*/
+
+
+/*---------------------
+section_newsblog
 -----------------------*/
 
 h2 {
