@@ -1,12 +1,31 @@
 @charset "UTF-8";
 
 
+main {
+    width: 100%;
+    max-width: 1480px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+main section {
+    padding: 0 48px;
+}
+
 /*---------------------
 header
 -----------------------*/
 header .header_wrap {
     display: flex;
     align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.header_wrap nav.gnav {
+    position: relative;
+    padding-top: 1rem;
 }
 
 .logo img {
@@ -20,6 +39,19 @@ ul {
     list-style: none;
     display: flex;
     gap: 40px
+    
+}
+
+nav.gnav ul::before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: -16px;
+    right: 0;
+    width: 100%;
+    height: 16px;
+    background-image: url(./images/line.png);
+    background-repeat: repeat-x;
 }
 
 /*---------------------
@@ -31,7 +63,16 @@ section_mv
     object-fit: cover;
 }
 
+.secwrap_b {
+    position: relative;
+}
 
+.tagline {
+    position: absolute;
+    z-index: 10;
+    bottom: 32px;
+    right: 16px;
+}
 
 /*---------------------
 section_concept
@@ -159,13 +200,53 @@ section_class_style
 section_newsblog
 -----------------------*/
 
+.secwrap2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    -webkit-align-items: stretch;
+    margin-top: 160px;
+    margin-bottom: 160px;
+}
+
+.secwrap2 div.sec {
+    width: 50%;
+    padding: 0 86px;
+}
+
+
 h2 {
     margin-bottom: 30px;
 }
 
 h2 span {
-    font-size: 1.8rem;
-    letter-spacing: 0.12em;
+    font-size: 29px;
+    letter-spacing: 2px;
+}
+
+.body {
+    position: relative;
+}
+
+.body div.img {
+    width: 100%;
+    height: 192px;
+    z-index: 2;
+    position: relative;
+    overflow: hidden;
+}
+
+body div.txt {
+    position: relative;
+}
+
+p.date {
+    margin-top: 16px;
 }
 
 body.top section.newsblog div.btn {
