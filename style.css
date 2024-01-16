@@ -83,11 +83,22 @@ section_mv
 /*---------------------
 section_concept
 -----------------------*/
+.concept {
+    position: relative;
+}
 
 body.top section.concept div.secwrap div.img div.imgwrap {
     width: 100%;
     height: 100%;
     background: url(./images/concept.jpg) center center no-repeat;
+}
+
+concept div.secwrap div.img {
+    width: 75%;
+    height: 640px;
+    z-index: 2;
+    position: relative;
+    overflow: hidden;
 }
 
 body.top section.concept div.secwrap div.txt {
@@ -105,6 +116,15 @@ body.top h2 {
     text-align: center;
 }
 
+h2 span {
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.lead {
+    white-space: nowrap;
+}
+
 /*---------------------
 section_class_menu
 -----------------------*/
@@ -118,6 +138,20 @@ section_class_menu
     left: 0;
 }
 
+.menu div.secwrap div.body ul li a div.liwrap div.txt {
+    position: absolute;
+    top: 50%;
+    padding-right: 16px;
+    margin-top: -64px;
+    text-align: center;
+    width: 100%;
+    z-index: 5;
+}
+
+.menu div.secwrap div.body ul li a div.liwrap div.txt p {
+    margin-top: 1px;
+}
+
 
 ul.row {
     width: 100%;
@@ -125,6 +159,11 @@ ul.row {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: stretch;
+}
+
+.menu div.secwrap div.body ul li {
+    width: 50%;
+    position: relative;
 }
 
 .menu div.secwrap div.body ul li:nth-child(1) {
@@ -165,7 +204,6 @@ a {
 
 
 body.top section.saloninfo div.secwrap div.txt {
-
     z-index: 10;
     width: 37.5%;
     top: 0;
@@ -206,6 +244,11 @@ h3{
     margin-top: 32px;
 }
 
+.menu div.secwrap div.body ul li:nth-child(2) {
+    margin-bottom: 64px;
+}
+
+
 /*---------------------
 section_class_secimg
 -----------------------*/
@@ -214,9 +257,37 @@ section_class_secimg
     text-align: center;
 }
 
+.secwrap {
+    width: 75%;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.secimg div.img {
+    width: 100%;
+    height: 480px;
+    z-index: 2;
+    position: relative;
+    overflow: hidden;
+}
+
+.secimg div.img div.imgwrap {
+    width: 100%;
+    height: 100%;
+    background: url(./images/secming.webp) center center no-repeat;
+    background-size: cover;
+}
+
 /*---------------------
 section_class_saloninfo
 -----------------------*/
+.saloninfo {
+    position: relative;
+}
+
 #slide2 {
     width: 75%;
     height: 640px;
@@ -225,6 +296,24 @@ section_class_saloninfo
     overflow: hidden;
     position: relative;
     z-index: 0;
+}
+
+.slide_wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+.saloninfo.secwrap.txt {
+    position: absolute;
+    z-index: 10;
+    width: 37.5%;
+    top: 0;
+    left: 0;
 }
 
 
@@ -252,7 +341,7 @@ section_newsblog
 
 
 h2 {
-    margin-bottom: 30px;
+    margin-bottom: 48px;
 }
 
 h2 span {
@@ -266,7 +355,6 @@ h2 span {
 
 .body div.img {
     width: 100%;
-    height: 192px;
     z-index: 2;
     position: relative;
     overflow: hidden;
