@@ -342,6 +342,32 @@ section_class_saloninfo
     left: 0;
 }
 
+.slide_wrap ul {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+.slide_wrap ul li {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.saloninfo div.secwrap div.txt {
+    position: absolute;
+    z-index: 10;
+    width: 37.5%;
+    top: 0;
+    left: 0;
+}
+
 
 /*---------------------
 section_class_style
