@@ -25,3 +25,18 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
     vertical-align: baseline;
     background-color: transparent;
 }
+
+input, textarea, button {
+    border-radius: 0 !important;
+    -webkit-appearance: none !important;
+    outline: 0 !important;
+}
+
+button a, button input[type="submit"] {
+    box-sizing: border-box;
+    display: block;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    letter-spacing: 0.14em;
+    white-space: nowrap;
+}
