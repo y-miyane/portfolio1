@@ -22,9 +22,9 @@ button {
 button.btn1 div.a {
     width: 200px;
     overflow: hidden;
-    font-size: 1rem;
-    width: 10rem;
-    height: 10rem;
+    font-size: 16px;
+    width: 160px;
+    height: 160px;
     background-repeat: no-repeat;
     background-image: url(./images/tri_2.png);
     background-size: contain;
@@ -33,8 +33,21 @@ button.btn1 div.a {
     z-index: 10;
 }
 
+.btn1 div.a span {
+    position: absolute;
+    color: #000;
+    right: 16px;
+    bottom: 16px;
+    line-height: 1.5;
+}
+
 ul {
     list-style: none;
+}
+
+div.btn {
+    width: 100%;
+    text-align: right;
 }
 
 /*---------------------
@@ -117,6 +130,7 @@ body.top section.concept div.secwrap div.img div.imgwrap {
     width: 100%;
     height: 100%;
     background: url(./images/concept.jpg) center center no-repeat;
+    background-size: cover;
 }
 
 
@@ -130,7 +144,7 @@ body.top section.concept div.secwrap div.txt {
 }
 
 body.top h2 {
-    margin-bottom: 30px;
+    margin-bottom: 48px;
 }
 
 .hr{
@@ -146,6 +160,21 @@ h2 span {
     white-space: nowrap;
 }
 
+p.lead {
+    font-size: 21.3px;
+    line-height: 2.5;
+}
+
+
+.hr::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 16px;
+    background-image: url(./images/line.png);
+    background-repeat: repeat-x;
+}
+
 /*---------------------
 section_class_menu
 -----------------------*/
@@ -153,7 +182,7 @@ section_class_menu
     position: relative;
 }
 .secwrap {
-    width: 75%;
+    width: 88%;
     max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
@@ -368,11 +397,40 @@ section_class_saloninfo
     left: 0;
 }
 
+.ci_wrap img{
+    width: auto;
+    height: 100%;
+    position: absolute;
+    inset: 0% auto auto -112.79px;
+}
+
+.saloninfo div.secwrap div.btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 
 /*---------------------
 section_class_style
 -----------------------*/
+.show_pctb {
+    display: block;
+}
 
+.img_show_pctb{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.img_show_pctb img{
+    height: 300px;
+    object-fit: contain;
+    width: 30%;
+}
 
 /*---------------------
 section_newsblog
@@ -396,10 +454,6 @@ h2 {
     margin-bottom: 48px;
 }
 
-h2 span {
-    font-size: 29px;
-    letter-spacing: 2px;
-}
 
 .body {
     position: relative;
