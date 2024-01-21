@@ -60,3 +60,7 @@ html h1, html h2, html h3, html h4, html .lv1, html .lv2, html .lv3, html .lv4, 
     font-weight: 600;
     letter-spacing: 2px;
 }
+
+dl.tb dt, dl.tb dd {
+    display: table-cell;
+}

@@ -50,9 +50,21 @@ div.btn {
     text-align: right;
 }
 
+
+
 /*---------------------
 header
 -----------------------*/
+header {
+    width: 100% !important;
+    max-width: 1480px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    z-index: 200;
+}
+
 header .header_wrap {
     display: flex;
     align-items: center;
@@ -66,7 +78,7 @@ header .header_wrap {
 }
 
 .logo img {
-    width: 100px;
+    width: 150px;
     line-height: 1px;
     margin-right: 60px;
 }
@@ -79,17 +91,7 @@ header .header_wrap {
     
 }
 
-nav.gnav ul::before {
-    position: absolute;
-    content: "";
-    display: block;
-    top: -16px;
-    right: 0;
-    width: 100%;
-    height: 16px;
-    background-image: url(./images/line.png);
-    background-repeat: repeat-x;
-}
+
 
 /*---------------------
 section_mv
@@ -109,6 +111,10 @@ section_mv
     z-index: 10;
     bottom: 32px;
     right: 16px;
+}
+
+.tagline span{
+    font-weight: 400;
 }
 
 /*---------------------
@@ -191,7 +197,7 @@ section_class_menu
 }
 
 .menu div.secwrap div.ttl {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
 }
@@ -232,11 +238,6 @@ ul.row {
     margin-bottom: 64px;
 }
 
-.liwrap {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
 
 a {
     color: #000;
@@ -305,6 +306,7 @@ h3{
 .liwrap.txt p {
     margin-top: 32px;
 }
+
 
 .menu div.secwrap div.body ul li:nth-child(2) {
     margin-bottom: 64px;
@@ -394,14 +396,13 @@ section_class_saloninfo
     z-index: 10;
     width: 37.5%;
     top: 0;
-    left: 0;
+    margin-left: 48px;
 }
 
 .ci_wrap img{
-    width: auto;
+    width: 100%;
     height: 100%;
     position: absolute;
-    inset: 0% auto auto -112.79px;
 }
 
 .saloninfo div.secwrap div.btn {
@@ -483,6 +484,12 @@ button.btn2 {
     margin-top: 64px;
 }
 
+.tb {
+    display: table;
+    width: 100%;
+    padding: 32px 0;
+}
+
 dl {
     border-top: none;
     border-bottom: none;
@@ -493,6 +500,7 @@ dt {
     line-height: 2;
     width: 30%;
 }
+
 
 body.top section.newsblog div.news div.txt a {
     display: block;
@@ -575,6 +583,8 @@ button.ftbtn a span {
     padding: 1rem 0;
     display: block;
 }
+
+
 
 .textlink {
     margin-top: 16px;
