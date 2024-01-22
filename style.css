@@ -255,7 +255,7 @@ section_class_menu
 }
 
 .menu div.secwrap div.body ul li a div.liwrap div.txt p {
-    margin-top: 1px;
+    margin-top: 32px;
 }
 
 
@@ -337,7 +337,7 @@ img {
     position: relative;
     z-index: 0;
     top: 16px;
-    right: -60px;
+    right: -120px;
 }
 
 h3{
