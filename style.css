@@ -50,7 +50,48 @@ div.btn {
     text-align: right;
 }
 
+a#menubtn {
+    opacity: 0;
+    position: fixed;
+    width: 28px;
+    height: 16px;
+    padding: 10px;
+    top: 16px;
+    right: 16px;
+    box-sizing: content-box;
+    visibility: hidden;
+    display: block;
+    z-index: 99999;
+}
 
+a#menubtn ul {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+a#menubtn ul li {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #666666;
+    left: 0;
+    transform-origin: center center;
+    -webkit-transform-origin: center center;
+}
+
+a#menubtn ul li:nth-child(1) {
+    top: 0;
+}
+
+a#menubtn ul li:nth-child(2) {
+    top: 50%;
+    opacity: 1;
+}
+
+a#menubtn ul li:nth-child(3) {
+    top: 100%;
+}
 
 /*---------------------
 header
@@ -142,6 +183,7 @@ body.top section.concept div.secwrap div.img div.imgwrap {
 
 
 body.top section.concept div.secwrap div.txt {
+    margin-bottom: 100px;
     position: absolute;
     z-index: 10;
     width: 37.5%;
@@ -204,8 +246,8 @@ section_class_menu
 
 .menu div.secwrap div.body ul li a div.liwrap div.txt {
     position: absolute;
-    top: 50%;
-    padding-right: 16px;
+    top: 200px;
+    padding-right: -100px;
     margin-top: -64px;
     text-align: center;
     width: 100%;
@@ -231,7 +273,7 @@ ul.row {
 }
 
 .menu div.secwrap div.body ul li:nth-child(1) {
-    margin-left: 240px;
+    margin-left: 0px;
 }
 
 .body ul li:nth-child(2) {
@@ -273,13 +315,14 @@ body.top section.saloninfo div.secwrap div.txt {
     left:0;
 }
 
+
 img {
     overflow-clip-margin: content-box;
     overflow: clip;
 }
 
 .img img {
-    width: 100%;
+    width: 80%;
     display: block;
 }
 
@@ -294,7 +337,7 @@ img {
     position: relative;
     z-index: 0;
     top: 16px;
-    right: -16px;
+    right: -60px;
 }
 
 h3{
@@ -537,8 +580,8 @@ footer {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 6rem;
-    padding-bottom: 3rem;
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 
 .f_nav {
@@ -555,8 +598,16 @@ h4 {
 
 footer div.footer_wrap div.f_nav div.f_nav_box div.txt div.btn button.ftbtn {
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 16px;
     position: relative;
+}
+
+.logo_img{
+    margin-bottom: 30px;
+}
+
+.footer_wrap .logo_img img{
+    width: 12%;
 }
 
 .cover {
