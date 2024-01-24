@@ -239,7 +239,7 @@ section_class_menu
 }
 
 .menu div.secwrap div.ttl {
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
 }
