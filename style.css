@@ -204,6 +204,14 @@ h2 span {
     letter-spacing: 2px;
 }
 
+h2 span:after {
+    margin-top: 48px;
+    height: 1px;
+    width: 48px;
+    background-color: #666666;
+}
+
+
 .lead {
     white-space: nowrap;
 }
@@ -223,6 +231,7 @@ p.lead {
     background-repeat: repeat-x;
 }
 
+
 /*---------------------
 section_class_menu
 -----------------------*/
@@ -232,21 +241,21 @@ section_class_menu
 .secwrap {
     width: 88%;
     max-width: 1080px;
-    margin-left: auto;
     margin-right: auto;
     margin-top: 160px;
     margin-bottom: 160px;
 }
 
 .menu div.secwrap div.ttl {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
 }
 
 .menu div.secwrap div.body ul li a div.liwrap div.txt {
     position: absolute;
-    top: 200px;
+    top: 170px;
+    left: 50px;
     padding-right: -100px;
     margin-top: -64px;
     text-align: center;
@@ -271,6 +280,7 @@ ul.row {
     width: 50%;
     position: relative;
 }
+
 
 .menu div.secwrap div.body ul li:nth-child(1) {
     margin-left: 0px;
