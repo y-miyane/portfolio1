@@ -50,48 +50,6 @@ div.btn {
     text-align: right;
 }
 
-a#menubtn {
-    opacity: 0;
-    position: fixed;
-    width: 28px;
-    height: 16px;
-    padding: 10px;
-    top: 16px;
-    right: 16px;
-    box-sizing: content-box;
-    visibility: hidden;
-    display: block;
-    z-index: 99999;
-}
-
-a#menubtn ul {
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
-a#menubtn ul li {
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background-color: #666666;
-    left: 0;
-    transform-origin: center center;
-    -webkit-transform-origin: center center;
-}
-
-a#menubtn ul li:nth-child(1) {
-    top: 0;
-}
-
-a#menubtn ul li:nth-child(2) {
-    top: 50%;
-    opacity: 1;
-}
-
-a#menubtn ul li:nth-child(3) {
-    top: 100%;
-}
 
 /*---------------------
 header
@@ -133,6 +91,132 @@ header .header_wrap {
 }
 
 
+/*
+ハンバーガ―メニュー
+*/
+
+.hamburger {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 30;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .hamburger:hover {
+    opacity: 0.7;
+  }
+  /* ハンバーガーメニューの線の設定（メニューが閉じている時） */
+  .hamburger span {
+    width: 50px;
+    height: 2px ;
+    background: #000;
+    position: absolute;
+    left: 25px;
+    transition: 0.3s ease-in-out;
+  }
+  /* 1本目の線の位置を設定 */
+  .hamburger span:nth-child(1) {
+    top: 36px;
+  }
+  /* 2本目の線の位置を設定 */
+  .hamburger span:nth-child(2) {
+    top: 50px;
+  }
+  /* 3本目の線の位置を設定 */
+  .hamburger span:nth-child(3) {
+    top: 64px;
+  }
+  /*
+  ハンバーガーメニューの線の設定（メニューが開いている時）
+  1本目の線を-45度回転
+  */
+  .hamburger.active span:nth-child(1) {
+    top: 47px;
+    left: 25px;
+    background :#000;
+    transform: rotate(-45deg);
+  }
+  /* 2本目と3本目は重ねて45度回転 */
+  .hamburger.active span:nth-child(2),
+  .hamburger.active span:nth-child(3) {
+    top: 47px;
+    background: #000;
+    transform: rotate(45deg);
+  }
+  /*
+  メニューの設定
+  最初は閉じている状態なので、「opacity: 0;」「visibility: hidden;」
+  で要素を非表示にしておく
+  */
+  #navi {
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    opacity: 0;
+    text-align: center;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+    visibility: hidden;
+  }
+  /*
+  ハンバーガーメニューがクリックされた際に、jQueryで#naviにactiveクラスを追加して、
+  メニューを表示させる。
+  */
+  #navi.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  #navi .logo {
+    width: 100px;
+    position: absolute;
+    top: 40px;
+    left: 50px;
+  }
+  #navi .menu {
+    margin: 80px 0 40px 0;
+  }
+  #navi .menu li {
+    margin-bottom: 20px;
+  }
+  #navi .menu a {
+    color: #fff;
+    font-weight: bold;
+  }
+  #navi .btn {
+    width: 250px;
+    border: solid 1px #000;
+    color: #000;
+    display: block;
+    font-weight: 100;
+    padding: 15px 0;
+    margin: 0 auto;
+    position: relative;
+    transition: 0.3s ease-in-out;
+  }
+  /* ボタンの右と下の線は疑似要素で設定 */
+  #navi .btn::after {
+    content: "";
+    width: 250px;
+    border-right: solid 1px #000;
+    border-bottom: solid 1px #000;
+    padding: 15px 0;
+    position: absolute;
+    right: -6px;
+    bottom: -6px;
+  }
+  #navi .btn:hover {
+    background-color: #fff;
+    color: #fff;
+  }
+  
 
 /*---------------------
 section_mv
@@ -241,12 +325,11 @@ section_class_menu
 .secwrap {
     width: 88%;
     max-width: 1080px;
-    margin-right: auto;
     margin-top: 160px;
     margin-bottom: 160px;
 }
 
-.menu div.secwrap div.ttl {
+.secwrap .ttl {
     position: relative;
     top: 0;
     left: 0;
@@ -254,8 +337,8 @@ section_class_menu
 
 .menu div.secwrap div.body ul li a div.liwrap div.txt {
     position: absolute;
-    top: 170px;
-    left: 50px;
+    top: 140px;
+    left: 40px;
     padding-right: -100px;
     margin-top: -64px;
     text-align: center;
@@ -264,7 +347,7 @@ section_class_menu
 }
 
 .menu div.secwrap div.body ul li a div.liwrap div.txt p {
-    margin-top: 32px;
+    margin-top: 12px;
 }
 
 
@@ -274,16 +357,32 @@ ul.row {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: stretch;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    -webkit-align-items: stretch;
+}
+
+.liwrap div.img {
+    position: relative;
+    width: calc( 100% - 1rem);
 }
 
 .menu div.secwrap div.body ul li {
-    width: 50%;
+    width: 40%;
     position: relative;
 }
 
 
 .menu div.secwrap div.body ul li:nth-child(1) {
-    margin-left: 0px;
+    margin-left: 190px;
+}
+body.top section.menu div.secwrap div.body ul li:nth-child(1), body.top section.menu div.secwrap div.body ul li:nth-child(2) {
+    margin-bottom: 4rem;
+}
+
+body.top section.menu div.secwrap div.body ul li:not(:nth-child(2n)) {
+    margin-right: calc( ( 100% - 15rem - ( 37.5% * 2 ) ) / 2 );
 }
 
 .body ul li:nth-child(2) {
@@ -347,7 +446,7 @@ img {
     position: relative;
     z-index: 0;
     top: 16px;
-    right: -120px;
+    right: -100px;
 }
 
 h3{
@@ -517,7 +616,6 @@ h2 {
     width: 100%;
     z-index: 2;
     position: relative;
-    overflow: hidden;
     
 }
 
