@@ -1,14 +1,21 @@
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 770px){
 html,body {
     font-size: 11px;
     color: #000;
+}
+
+
+header {
+    padding: 12px;
+    position: relative !important;
 }
 
 header div.header_wrap {
     display: block;
 }
 
-.header_wrap div.img {
+.logo img {
+    width: 84px;
     width: 25%;
 }
 
@@ -17,7 +24,7 @@ header div.header_wrap {
 }
 
 #wrapAll main section {
-    padding: 0 2rem;
+    padding: 0 1rem;
 }
 
 body.top section.mv {
@@ -26,6 +33,82 @@ body.top section.mv {
 
 body.top section.mv div.secwrap_b div.img {
     height: 5vh;
+}
+
+.tagline {
+    bottom: -4rem;
+    right: 1rem;
+}
+
+.secwrap_b {
+    margin-bottom: 16px;
+}
+
+.ci_wrap {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+main section div.secwrap {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.concept div.secwrap div.img {
+    height: 16rem;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.concept div.secwrap div.txt {
+    position: relative;
+    width: 100%;
+    top: 0;
+}
+
+h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+h2 span {
+    font-size: 20px;
+}
+
+.secwrap div.txt p.lead {
+    text-align: center;
+    font-size: 1.16rem;
+    line-height: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer_wrap {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.footer_wrap div.logo {
+    display: none;
 }
 
 }
