@@ -14,6 +14,8 @@ header div.header_wrap {
     display: block;
 }
 
+
+
 .logo img {
     width: 84px;
     width: 25%;
@@ -41,7 +43,7 @@ body.top section.mv div.secwrap_b div.img {
 }
 
 .secwrap_b {
-    margin-bottom: 16px;
+    margin-bottom: 8rem;
 }
 
 .ci_wrap {
@@ -53,6 +55,8 @@ body.top section.mv div.secwrap_b div.img {
 main section div.secwrap {
     margin-top: 4rem;
     margin-bottom: 4rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .concept div.secwrap div.img {
@@ -61,10 +65,11 @@ main section div.secwrap {
     margin-bottom: 3rem;
 }
 
-.concept div.secwrap div.txt {
+body.top section.concept div.secwrap div.txt {
     position: relative;
     width: 100%;
     top: 0;
+    margin-bottom: 0;
 }
 
 h2 {
@@ -82,9 +87,66 @@ h2 span {
     line-height: 2;
 }
 
+body.top section.concept div.secwrap div.btn {
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+}
+
+button.btn1 a, button.btn1 input[type="submit"], button.btn1 div.a {
+    display: block;
+    width: 22rem;
+    height: auto;
+    border: 1px solid #666666;
+    padding: 1rem 3rem;
+    text-align: left;
+    position: relative;
+    background-image: none;
+}
+
+button.btn1 a span, button.btn1 input[type="submit"] span, button.btn1 div.a span {
+    position: relative;
+    font-size: 1rem;
+    text-align: left;
+    line-height: 2;
+    font-family: "Asap", YuGothic, "游ゴシック", "MS Ｐゴシック", "MS P Gothic", "MS-PGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, arial, helvetica, clean, sans-serif;
+    letter-spacing: 0.12em;
+    right: auto;
+    bottom: auto;
+}
+
+body.top h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+h2 span {
+    font-size: 20px;
+}
+
+body.top h2 span {
+    font-size: 1.5rem;
+}
 
 
 
+
+
+
+
+
+
+
+div#wrapAll main section div.secwrap {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+body.top section.secimg div.img {
+    height: 10rem;
+}
 
 
 
