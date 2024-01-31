@@ -647,7 +647,7 @@ button.btn2 {
 .tb {
     display: table;
     width: 100%;
-    padding: 32px 0;
+    padding: 16px 0;
 }
 
 dl {
@@ -763,5 +763,5 @@ button.ftbtn a span {
 .copyright {
     text-align: center;
     margin-top: 50px;
-    font-size: 12px;
+    font-size: 0.8rem;
 }

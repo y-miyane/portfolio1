@@ -14,7 +14,27 @@ header div.header_wrap {
     display: block;
 }
 
+.hamburger {
+    width: 75px;
+    height: 75px;
+}
 
+.hamburger span {
+    width: 35px;
+    left: 21px;
+}
+
+.hamburger span:nth-child(1) {
+    top: 26px;
+}
+
+.hamburger span:nth-child(2) {
+    top: 37px;
+}
+
+.hamburger span:nth-child(3) {
+    top: 48px;
+}
 
 .logo img {
     width: 84px;
@@ -149,28 +169,66 @@ body.top section.secimg div.img {
 }
 
 
+body.top section.style div.secwrap_b div.body div.btn {
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+}
+
+div#wrapAll main section div.secwrap2 {
+    display: block;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+
+body.top section.newsblog div.blog div.ttl {
+    position: relative;
+    top: 0rem;
+    left: 0rem;
+}
+
+.show_pctb {
+    display: block;
+}
 
 
+div#wrapAll main section div.secwrap2 div.sec {
+    display: block;
+    width: 88%;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
 
-
-
-
-
-
-
-
-
-
+body.top section.newsblog div.news div.ttl {
+    text-align: center;
+}
 
 
 
 .footer_wrap {
     padding-top: 2rem;
     padding-bottom: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    width: 100%;
 }
 
-.footer_wrap div.logo {
+
+.footer_wrap div.logo_img {
     display: none;
+}
+
+footer div.footer_wrap div.f_nav {
+    display: none;
+}
+
+footer div.footer_wrap p.copyright {
+    margin-top: 0;
 }
 
 }
