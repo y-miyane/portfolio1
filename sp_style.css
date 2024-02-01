@@ -4,6 +4,23 @@ html,body {
     color: #000;
 }
 
+body.top section.menu div.secwrap div.body ul li a div.liwrap div.txt h3, body.top section.menu div.secwrap div.body ul li a div.liwrap div.txt p {
+    font-size: 1.25rem;
+}
+
+html h3 span, html .lv3 span, body h3 span, body .lv3 span {
+    font-size: 1.3rem;
+}
+
+html h1 span, html h2 span, html h3 span, html h4 span, html .lv1 span, html .lv2 span, html .lv3 span, html .lv4 span, body h1 span, body h2 span, body h3 span, body h4 span, body .lv1 span, body .lv2 span, body .lv3 span, body .lv4 span {
+    display: inline-block;
+    font-family: "Asap", YuGothic, "游ゴシック", "MS Ｐゴシック", "MS P Gothic", "MS-PGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, arial, helvetica, clean, sans-serif;
+}
+
+html p span, html dt span, html dd span, body p span, body dt span, body dd span {
+    line-height: 2;
+    letter-spacing: 0.08em;
+}
 
 header {
     padding: 12px;
@@ -38,7 +55,7 @@ header div.header_wrap {
 
 .logo img {
     width: 84px;
-    width: 25%;
+    width: 120%;
 }
 
 .header_wrap nav.gnav_tc {
@@ -58,7 +75,7 @@ body.top section.mv div.secwrap_b div.img {
 }
 
 .tagline {
-    bottom: -4rem;
+    bottom: -1rem;
     right: 1rem;
 }
 
@@ -154,18 +171,91 @@ body.top h2 span {
 
 
 
-
-
-
-
-
 div#wrapAll main section div.secwrap {
     margin-top: 4rem;
     margin-bottom: 4rem;
 }
 
+.menu div.secwrap div.body ul li {
+    width: 100%;
+    position: relative;
+}
+
+body.top section.menu div.secwrap div.body ul li:nth-child(1) {
+    margin-left: 10rem;
+}
+
+ul.row {
+    flex-direction: column;
+}
+
+
+body.top section.menu div.secwrap div.body ul li:not(:nth-child(2n)) {
+    margin-right: calc( ( 100% - 10rem - ( 37.5% * 2 ) ) / 2 );
+}
+
+body.top section.menu div.secwrap div.body ul li:nth-child(1) {
+    margin-left: 0 !important;
+}
+
+body.top section.menu div.secwrap div.body ul li:nth-child(1), body.top section.menu div.secwrap div.body ul li:nth-child(2) {
+    margin-bottom: 2rem;
+}
+
+body.top section.menu div.secwrap div.body ul li:nth-child(1), body.top section.menu div.secwrap div.body ul li:nth-child(2) {
+    margin-bottom: 4rem;
+}
+
+
+body.top section.menu div.secwrap div.body ul li a div.liwrap div.img {
+    position: relative;
+    width: calc( 100% - 1rem);
+}
+
+
+
+body.top section.menu div.secwrap div.body ul li a div.liwrap div.txt p {
+    margin-top: 0.5rem;
+}
+
+body.top section.menu div.secwrap div.body ul li:nth-child(3) {
+    display: none;
+}
+
+body.top section.menu div.secwrap div.body div.btn {
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+}
+
+
 body.top section.secimg div.img {
     height: 10rem;
+}
+
+
+
+body.top section.saloninfo div.secwrap div#slide2 {
+    height: 16rem;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+
+body.top section.saloninfo div.secwrap div.txt {
+    position: relative;
+    width: 100%;
+    margin-left: 0;
+}
+
+body.top section.saloninfo div.secwrap div.btn {
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
 }
 
 
