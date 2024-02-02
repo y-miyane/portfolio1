@@ -31,6 +31,13 @@ header div.header_wrap {
     display: block;
 }
 
+header div.header_wrap div.logo {
+    position: absolute;
+    width: 15%;
+    max-width: 176px;
+    z-index: 50;
+}
+
 .hamburger {
     width: 75px;
     height: 75px;
@@ -167,7 +174,19 @@ body.top h2 span {
     font-size: 1.5rem;
 }
 
-
+button.btn1 a::after, button.btn1 input[type="submit"]::after, button.btn1 div.a::after {
+    content: "";
+    position: absolute;
+    display: block;
+    right: 3rem;
+    width: 72px;
+    height: 4px;
+    top: 50%;
+    margin-top: -2px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-bottom: 1px solid #000;
+}
 
 
 
@@ -189,6 +208,10 @@ ul.row {
     flex-direction: column;
 }
 
+.img img {
+    width: 100%;
+    display: block;
+}
 
 body.top section.menu div.secwrap div.body ul li:not(:nth-child(2n)) {
     margin-right: calc( ( 100% - 10rem - ( 37.5% * 2 ) ) / 2 );
@@ -198,13 +221,7 @@ body.top section.menu div.secwrap div.body ul li:nth-child(1) {
     margin-left: 0 !important;
 }
 
-body.top section.menu div.secwrap div.body ul li:nth-child(1), body.top section.menu div.secwrap div.body ul li:nth-child(2) {
-    margin-bottom: 2rem;
-}
 
-body.top section.menu div.secwrap div.body ul li:nth-child(1), body.top section.menu div.secwrap div.body ul li:nth-child(2) {
-    margin-bottom: 4rem;
-}
 
 
 body.top section.menu div.secwrap div.body ul li a div.liwrap div.img {
@@ -212,7 +229,15 @@ body.top section.menu div.secwrap div.body ul li a div.liwrap div.img {
     width: calc( 100% - 1rem);
 }
 
+.menu div.secwrap div.body ul li a div.liwrap div.txt {
+    top: 180px;
+    left: 0px;
+}
 
+.img2 {
+    top: 16px;
+    right: -20px;
+}
 
 body.top section.menu div.secwrap div.body ul li a div.liwrap div.txt p {
     margin-top: 0.5rem;
@@ -298,6 +323,17 @@ body.top section.newsblog div.news div.ttl {
     text-align: center;
 }
 
+button.btn2 a::after, button.btn2 input[type="submit"]::after {
+    content: "";
+    position: absolute;
+    display: block;
+    right: 3rem;
+    width: 72px;
+    top: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-bottom: 1px solid #000;
+}
 
 
 .footer_wrap {
