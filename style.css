@@ -10,7 +10,7 @@ main {
 }
 
 main section {
-    padding: 0 48px;
+    padding: 0 3rem;
 }
 
 button {
@@ -55,10 +55,6 @@ ul {
     list-style: none;
 }
 
-div.btn {
-    width: 100%;
-    text-align: right;
-}
 
 
 /*---------------------
@@ -130,7 +126,7 @@ header div.header_wrap div.logo {
     height: 100px;
     position: fixed;
     top: 0;
-    right: 0;
+    right: 150px;
     z-index: 30;
     cursor: pointer;
     transition: 0.3s;
@@ -271,6 +267,86 @@ section_mv
     font-weight: 400;
 }
 
+.secwrap_b div.img {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 64vh;
+}
+
+.secwrap_b div.img {
+    opacity: 0;
+}
+
+.secwrap_b div#slide {
+    position: absolute;
+    width: 100%;
+    height: 100% !important;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.mv div.secwrap_b div#slide:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    background-color: #a2a284;
+    z-index: 2;
+}
+
+.secwrap_b div#slide div.triming {
+    position: absolute;
+    width: 26.25%;
+    max-width: 314px;
+}
+
+.secwrap_b div#slide div.triming.t {
+    top: 0;
+}
+
+#slide div.slide_wrap ul li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1000;
+}
+
+.ci_wrap{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+    position: relative;
+}
+
+.ci_wrap img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    inset: -68.0872px auto auto 0%;
+}
+
+
+.secwrap_b div.scroll:before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 3rem;
+    background-color: #000;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
 /*---------------------
 section_concept
 -----------------------*/
@@ -300,7 +376,7 @@ body.top section.concept div.secwrap div.txt {
     position: absolute;
     z-index: 10;
     width: 37.5%;
-    right: 0;
+    right: 50px;
     bottom: 0;
 }
 
@@ -344,6 +420,13 @@ p.lead {
     background-repeat: repeat-x;
 }
 
+.concept .btn {
+    width: 100%;
+    text-align: right;
+    position: absolute;
+    right: 60px;
+}
+
 
 /*---------------------
 section_class_menu
@@ -354,13 +437,15 @@ section_class_menu
 .secwrap {
     width: 88%;
     max-width: 1080px;
-    margin-top: 160px;
-    margin-bottom: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
+    margin-bottom: 10rem 
 }
 
-.secwrap .ttl {
+.menu .secwrap .ttl {
     position: relative;
-    top: 0;
+    top: 100px;
     left: 0;
 }
 
@@ -447,7 +532,7 @@ body.top section.saloninfo div.secwrap div.txt {
     z-index: 10;
     width: 37.5%;
     top: 0;
-    left:0;
+    left:66px;
 }
 
 
@@ -490,6 +575,12 @@ h3{
     margin-bottom: 64px;
 }
 
+.menu .secwrap .body .btn {
+    position: absolute;
+    width: auto;
+    bottom: -40px;
+    right: 0;
+}
 
 /*---------------------
 section_class_secimg
@@ -525,7 +616,7 @@ section_class_saloninfo
 
 #slide2 {
     width: 75%;
-    height: 640px;
+    height: 400px;
     margin-left: auto;
     margin-right: 0;
     overflow: hidden;
@@ -584,10 +675,8 @@ section_class_saloninfo
 
 .saloninfo div.secwrap div.btn {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: -64px;
 }
-
 
 /*---------------------
 section_class_style
@@ -609,6 +698,14 @@ section_class_style
     object-fit: contain;
     width: 30%;
 }
+
+.secwrap_b .ttl {
+    position: relative;
+    top: 0;
+    left: 66px;
+}
+
+
 
 /*---------------------
 section_newsblog
@@ -688,9 +785,7 @@ body.top section.newsblog div.news div.txt a {
     border-bottom: 1px solid #666666;
 }
 
-.btn {
-    text-align: center;
-}
+
 
 button.btn2 a{
     width: 16rem;
