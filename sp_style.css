@@ -137,6 +137,8 @@ body.top section.concept div.secwrap div.btn {
     margin-left: auto;
     margin-right: auto;
     margin-top: 4rem;
+    width: 100%;
+    right: 0;
 }
 
 button.btn1 a, button.btn1 input[type="submit"], button.btn1 div.a {
@@ -230,7 +232,7 @@ body.top section.menu div.secwrap div.body ul li a div.liwrap div.img {
 }
 
 .menu div.secwrap div.body ul li a div.liwrap div.txt {
-    top: 180px;
+    top: 200px;
     left: 0px;
 }
 
@@ -253,6 +255,9 @@ body.top section.menu div.secwrap div.body div.btn {
     margin-left: auto;
     margin-right: auto;
     margin-top: 4rem;
+    width: auto;
+    right: 0;
+    bottom: 0;
 }
 
 
@@ -260,19 +265,20 @@ body.top section.secimg div.img {
     height: 10rem;
 }
 
-
-
 body.top section.saloninfo div.secwrap div#slide2 {
     height: 16rem;
     width: 100%;
     margin-bottom: 3rem;
 }
 
-
 body.top section.saloninfo div.secwrap div.txt {
     position: relative;
     width: 100%;
-    margin-left: 0;
+}
+
+.secwrap_b .ttl {
+    position: relative;
+    top: 0;
 }
 
 body.top section.saloninfo div.secwrap div.btn {
@@ -281,6 +287,7 @@ body.top section.saloninfo div.secwrap div.btn {
     margin-left: auto;
     margin-right: auto;
     margin-top: 4rem;
+    bottom: 0;
 }
 
 
@@ -317,6 +324,11 @@ div#wrapAll main section div.secwrap2 div.sec {
     margin-right: auto;
     margin-top: 8rem;
     margin-bottom: 8rem;
+}
+
+.secwrap_b .ttl {
+    position: relative;
+    top: 0;
 }
 
 body.top section.newsblog div.news div.ttl {

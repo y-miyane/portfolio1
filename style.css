@@ -126,7 +126,7 @@ header div.header_wrap div.logo {
     height: 100px;
     position: fixed;
     top: 0;
-    right: 150px;
+    right: 0;
     z-index: 30;
     cursor: pointer;
     transition: 0.3s;
@@ -288,17 +288,7 @@ section_mv
     overflow: hidden;
 }
 
-.mv div.secwrap_b div#slide:before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 1;
-    background-color: #a2a284;
-    z-index: 2;
-}
+
 
 .secwrap_b div#slide div.triming {
     position: absolute;
@@ -376,8 +366,8 @@ body.top section.concept div.secwrap div.txt {
     position: absolute;
     z-index: 10;
     width: 37.5%;
-    right: 50px;
     bottom: 0;
+    right: 0;
 }
 
 body.top h2 {
@@ -445,7 +435,6 @@ section_class_menu
 
 .menu .secwrap .ttl {
     position: relative;
-    top: 100px;
     left: 0;
 }
 
@@ -532,7 +521,7 @@ body.top section.saloninfo div.secwrap div.txt {
     z-index: 10;
     width: 37.5%;
     top: 0;
-    left:66px;
+    position: absolute
 }
 
 
@@ -660,13 +649,6 @@ section_class_saloninfo
     z-index: 1000;
 }
 
-.saloninfo div.secwrap div.txt {
-    position: absolute;
-    z-index: 10;
-    width: 37.5%;
-    top: 0;
-    margin-left: 48px;
-}
 
 .ci_wrap img{
     width: 100%;
@@ -703,7 +685,6 @@ section_class_style
     position: relative;
     top: 0;
     left: 66px;
-    width: 500px;
 }
 
 .style .btn{
