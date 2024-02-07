@@ -121,7 +121,7 @@ header div.header_wrap div.logo {
 ハンバーガ―メニュー
 */
 
-.hamburger {
+#hmb {
     width: 100px;
     height: 100px;
     position: fixed;
@@ -131,77 +131,80 @@ header div.header_wrap div.logo {
     cursor: pointer;
     transition: 0.3s;
   }
-  .hamburger:hover {
-    opacity: 0.7;
-  }
  
-  .hamburger span {
-    width: 50px;
-    height: 2px ;
+  #hmb span {
+    width: 30px;
+    height: 1px ;
     background: #000;
     position: absolute;
     left: 25px;
     transition: 0.3s ease-in-out;
   }
  
-  .hamburger span:nth-child(1) {
-    top: 36px;
+  #hmb span:nth-child(1) {
+    top: 30px;
   }
   
-  .hamburger span:nth-child(2) {
-    top: 50px;
+  #hmb span:nth-child(2) {
+    top: 40px;
   }
  
-  .hamburger span:nth-child(3) {
-    top: 64px;
+  #hmb span:nth-child(3) {
+    top: 50px;
   }
   
-  .hamburger.active span:nth-child(1) {
+  
+  #navi {
+    width: 20%;
+    height: 400px;
+    background-color: powderblue;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 20;
+    opacity: 0;
+    align-items: center;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+    visibility: hidden;
+    transform: translateX(100%);
+  }
+  
+
+  
+#navi .nav_menu {
+    margin: 80px 0 40px 0;
+    text-align: center;
+}
+  #navi .nav_menu li {
+    margin-bottom: 20px;
+}
+  #navi .nav_menu a {
+    color: #000;
+    font-weight: bold;
+}
+
+.active #hmb span:nth-child(1) {
     top: 47px;
     left: 25px;
     background :#000;
     transform: rotate(-45deg);
-  }
-  
+}
 
-  .hamburger.active span:nth-child(2),
-  .hamburger.active span:nth-child(3) {
+.active #hmb span:nth-child(2),
+.active #hmb span:nth-child(3) {
     top: 47px;
     background: #000;
     transform: rotate(45deg);
-  }
-  
-  #navi {
-    width: 100%;
-    height: 100vh;
-    background-color: gray;
-    color: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 20;
-    opacity: 0;
-    text-align: center;
-    transition: opacity 0.6s ease, visibility 0.6s ease;
-    visibility: hidden;
-  }
-  
-  #navi.active {
-    opacity: 1;
+}
+
+.active #navi {
     visibility: visible;
-  }
-  
-  #navi .nav_menu {
-    margin: 80px 0 40px 0;
-  }
-  #navi .nav_menu li {
-    margin-bottom: 20px;
-  }
-  #navi .nav_menu a {
-    color: #fff;
-    font-weight: bold;
-  }
-  
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
   
 
 /*---------------------
