@@ -19,18 +19,6 @@ button {
     background-color: transparent;
 }
 
-button.btn1 a, button.btn1 input[type="submit"], button.btn1 div.a {
-    width: 100px;
-    overflow: hidden;
-    font-size: 16px;
-    height: 160px;
-    background-repeat: no-repeat;
-    background-image: url(./images/btn_2.png);
-    background-size: contain;
-    text-align: right;
-    position: relative;
-    z-index: 10;
-}
 
 .btn1 a span{
     position: absolute;
@@ -297,11 +285,11 @@ section_mv
 /*---------------------
 section_concept
 -----------------------*/
-.concept {
+#concept {
     position: relative;
 }
 
-.concept div.secwrap div.img {
+#concept div.secwrap div.img {
     width: 75%;
     height: 640px;
     z-index: 2;
@@ -309,7 +297,7 @@ section_concept
     overflow: hidden;
 }
 
-body.top section.concept div.secwrap div.img div.imgwrap {
+body.top section #concept div.secwrap div.img div.imgwrap {
     width: 100%;
     height: 100%;
     background: url(./images/concept.jpg) center center no-repeat;
@@ -318,7 +306,7 @@ body.top section.concept div.secwrap div.img div.imgwrap {
 
 
 
-body.top section.concept div.secwrap div.txt {
+body.top section #concept div.secwrap div.txt {
     margin-bottom: 100px;
     position: absolute;
     z-index: 10;
@@ -367,13 +355,46 @@ p.lead {
     background-repeat: repeat-x;
 }
 
-.concept .btn {
-    width: 100%;
+#concept .btn {
+    display: inline-block;
     text-align: right;
+    background: #fff;
+    border: 0.5px solid #000;
+    color: #000;
+    padding: 25px ;
     position: absolute;
     right: 60px;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
 }
 
+#concept .btn ::before{
+    content: "";
+    display: inline-block;
+    background: #616a2d;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    z-index: -1;
+    
+}
+
+#concept .btn :hover ::before{
+    transform: translateX(0%);
+}
+
+#concept .btn :hover {
+    color: #fff;
+}
+
+#concept .btn span{
+    letter-spacing: 1px;
+    line-height:20px;
+}
 
 /*---------------------
 section_class_menu
