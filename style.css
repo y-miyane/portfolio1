@@ -418,10 +418,9 @@ section_class_menu
 
 .menu div.secwrap div.body ul li a div.liwrap div.txt {
     position: absolute;
-    top: 140px;
-    left: 40px;
-    padding-right: -100px;
-    margin-top: -64px;
+    top: 50%;
+    padding-right: 1rem;
+    margin-top: -4rem;
     text-align: center;
     width: 100%;
     z-index: 5;
