@@ -34,7 +34,7 @@ button {
     position: absolute;
     color: #000;
     right: 20px;
-    bottom: 90px;
+    bottom: 20px;
     line-height: 1.5;
     text-align: center;
 }
@@ -219,6 +219,70 @@ section_mv
     height: 64vh;
 }
 
+.triming{
+    margin-top: -133.5px;
+    left: -133.5px
+}
+
+#slide div.triming.t {
+    top: 0;
+}
+
+#slide div.triming {
+    position: absolute;
+    width: 26.25%;
+    max-width: 314px;
+}
+
+body.load.top section.mv div.secwrap_b div#slide div.triming::before {
+    transform-origin: center center;
+    -moz-transform-origin: center center;
+    -webkit-transform-origin: center center;
+    transform: translate3d(0px, 0px, 0px) rotate(45deg);
+    -webkit-transform: translate3d(0px, 0px, 0px) rotate(45deg);
+    -moz-transform: translate3d(0px, 0px, 0px) rotate(45deg);
+    -o-transform: translate3d(0px, 0px, 0px) rotate(45deg);
+    -ms-transform: translate3d(0px, 0px, 0px) rotate(45deg);
+    transition: transform 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95) 800ms;
+    -webkit-transition: -webkit-transform 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95) 800ms;
+    -moz-transition: -moz-transform 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95) 800ms;
+    -o-transition: -o-transform 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95) 800ms;
+    -ms-transition: -ms-transform 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95) 800ms;
+}
+
+#slide div.triming.t::before {
+    opacity: 1;
+    transform: translate3d(-110px, -110px, 0px) rotate(45deg);
+    -webkit-transform: translate3d(-110px, -110px, 0px) rotate(45deg);
+    -moz-transform: translate3d(-110px, -110px, 0px) rotate(45deg);
+    -ms-transform: translate3d(-110px, -110px, 0px) rotate(45deg);
+    -o-transform: translate3d(-110px, -110px, 0px) rotate(45deg);
+}
+
+
+#slide div.triming.b {
+    bottom: 0;
+}
+
+#slide div.triming.b::before {
+    opacity: 1;
+    transform: translate3d(110px, 110px, 0px) rotate(45deg);
+    -webkit-transform: translate3d(110px, 110px, 0px) rotate(45deg);
+    -moz-transform: translate3d(110px, 110px, 0px) rotate(45deg);
+    -ms-transform: translate3d(110px, 110px, 0px) rotate(45deg);
+    -o-transform: translate3d(110px, 110px, 0px) rotate(45deg);
+}
+
+#slide div.triming::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    padding-top: 100%;
+    z-index: 3;
+}
+
 
 
 
@@ -307,7 +371,6 @@ body.top section #concept div.secwrap div.img div.imgwrap {
 
 
 body.top section #concept div.secwrap div.txt {
-    margin-bottom: 100px;
     position: absolute;
     z-index: 10;
     width: 37.5%;
@@ -357,24 +420,39 @@ p.lead {
 
 .btn {
     text-align: right;
+    width: 100%;
 }
 
-.btn1 span {
-    position: absolute;
-    color: #000;
-    right: 90px;
-    bottom: -82px;
-    line-height: 1.5;
-
-}
 
 #concept img{
     position: absolute;
-    top: 100px;
+    top: 230px;
     right: 0px;
 }
 
 
+.btn1 div.a {
+    width: 200px;
+    overflow: hidden;
+    font-size: 1rem;
+    width: 10rem;
+    height: 10rem;
+    background-repeat: no-repeat;
+    background-image: url(./images/btn1.png);
+    background-size: contain;
+    text-align: right;
+    position: relative;
+    z-index: 10;
+}
+
+.btn1 div.a:hover {
+    background-image: url(./images/btn2.png);
+    
+}
+
+.btn1 div.a span:hover {
+    color: #fff;
+}
 
 /*---------------------
 section_class_menu
@@ -565,7 +643,7 @@ section_class_saloninfo
 
 #slide2 {
     width: 75%;
-    height: 400px;
+    height: 560px;
     margin-left: auto;
     margin-right: 0;
     overflow: hidden;

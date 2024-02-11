@@ -1,5 +1,5 @@
 html, body {
-    font-family: "Open Sans", YuGothic, "游ゴシック", "ＭＳ Ｐゴシック", "MS P Gothic", "MS-PGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, arial, helvetica, clean, sans-serif;
+    font-family: "Open Sans", YuGothic, "游ゴシック", "MS Ｐゴシック", "MS P Gothic", "MS-PGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, arial, helvetica, clean, sans-serif;
     position: relative;
 }
 
@@ -56,7 +56,7 @@ html h3 span, html .lv3 span, body h3 span, body .lv3 span {
 
 html p span, html dt span, html dd span, body p span, body dt span, body dd span {
     line-height: 2;
-    letter-spacing: 1.28px;
+    letter-spacing: 0.08em;
 }
 
 html h1, html h2, html h3, html h4, html .lv1, html .lv2, html .lv3, html .lv4, body h1, body h2, body h3, body h4, body .lv1, body .lv2, body .lv3, body .lv4 {
