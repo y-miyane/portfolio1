@@ -347,6 +347,10 @@ button.btn2 a::after, button.btn2 input[type="submit"]::after {
     border-bottom: 1px solid #000;
 }
 
+.totopsp {
+    display: none;
+}
+
 
 .footer_wrap {
     padding-top: 2rem;

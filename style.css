@@ -44,6 +44,10 @@ ul {
 }
 
 
+.btn {
+    text-align: center;
+}
+
 
 /*---------------------
 header
@@ -219,9 +223,14 @@ section_mv
     height: 64vh;
 }
 
-.triming{
+.triming.t{
     margin-top: -133.5px;
     left: -133.5px
+}
+
+.triming.b{
+margin-bottom: 131.5px;
+    right: -133.5px
 }
 
 #slide div.triming.t {
@@ -230,7 +239,7 @@ section_mv
 
 #slide div.triming {
     position: absolute;
-    width: 26.25%;
+    width: 24.25%;
     max-width: 314px;
 }
 
@@ -361,6 +370,50 @@ section_concept
     overflow: hidden;
 }
 
+.concept div.secwrap::before {
+    position: absolute;
+    content: "";
+    width: 20rem;
+    height: 15rem;
+    background: url(./images/tri_line.png) center center no-repeat;
+    background-size: cover;
+    top: 1rem;
+    left: 3rem;
+    z-index: 10;
+}
+
+body.top section.concept div.secwrap div.img::before, body.top section.concept div.secwrap div.img::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    width: 35.35%;
+    padding-top: 35.35%;
+    z-index: 3;
+    transform-origin: center center;
+    -moz-transform-origin: center center;
+    -webkit-transform-origin: center center;
+}
+
+.concept div.secwrap div.img::before {
+    top: 0;
+    margin-top: calc( calc( 35.35% / -2));
+    left: calc( calc( 35.35% / -2));
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+
+.concept div.secwrap div.img::after {
+    bottom: 0;
+    margin-bottom: calc( calc( 35.35% / -2));
+    right: calc( calc( 35.35% / -2));
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
 body.top section #concept div.secwrap div.img div.imgwrap {
     width: 100%;
     height: 100%;
@@ -423,6 +476,10 @@ p.lead {
     width: 100%;
 }
 
+.show_pctb {
+    display: block;
+}
+
 
 #concept img{
     position: absolute;
@@ -476,7 +533,7 @@ section_class_menu
 
 .menu div.secwrap div.body ul li a div.liwrap div.txt {
     position: absolute;
-    top: 50%;
+    top: 75%;
     padding-right: 1rem;
     margin-top: -4rem;
     text-align: center;
@@ -507,7 +564,7 @@ ul.row {
 }
 
 .menu div.secwrap div.body ul li {
-    width: 40%;
+    width: 37.5%;
     position: relative;
 }
 
@@ -566,7 +623,7 @@ img {
 }
 
 .img img {
-    width: 80%;
+    width: 100%;
     display: block;
 }
 
@@ -580,8 +637,8 @@ img {
 .img2 {
     position: relative;
     z-index: 0;
-    top: 16px;
-    right: -100px;
+    top: 1rem;
+    right: -1rem;
 }
 
 h3{
@@ -632,6 +689,37 @@ section_class_secimg
     height: 100%;
     background: url(./images/secming.webp) center center no-repeat;
     background-size: cover;
+}
+
+.secimg div.img::before, body.top section.secimg div.img::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    width: 17.675%;
+    padding-top: 17.675%;
+    z-index: 3;
+    transform-origin: center center;
+    -moz-transform-origin: center center;
+    -webkit-transform-origin: center center;
+}
+
+.secimg div.img::before {
+    top: 0;
+    margin-top: calc( calc( 17.675% / -2));
+    left: calc( calc( 17.675% / -2));
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.secimg div.img::after {
+    bottom: 0;
+    margin-bottom: calc( calc( 17.675% / -2));
+    right: calc( calc( 17.675% / -2));
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 
 /*---------------------
@@ -695,10 +783,69 @@ section_class_saloninfo
 
 .saloninfo div.secwrap div.btn {
     position: absolute;
-    bottom: -64px;
+    bottom: 47px;
+    right: 112px;
+}
+
+.saloninfo div.secwrap::before {
+    position: absolute;
+    content: "";
+    width: 20rem;
+    height: 20rem;
+    background: url(./images/tri_line.png) center center no-repeat;
+    background-size: cover;
+    top: -1rem;
+    right: 3rem;
+    z-index: 10;
+    transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
 }
 
 
+.saloninfo div.secwrap div#slide2::before, body.top section.saloninfo div.secwrap div#slide2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    width: 35.35%;
+    padding-top: 35.35%;
+    z-index: 3;
+    transform-origin: center center;
+    -moz-transform-origin: center center;
+    -webkit-transform-origin: center center;
+}
+
+.secimg div.img::before, body.top section.secimg div.img::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    width: 17.675%;
+    padding-top: 17.675%;
+    z-index: 3;
+    transform-origin: center center;
+    -moz-transform-origin: center center;
+    -webkit-transform-origin: center center;
+}
+
+.saloninfo div.secwrap div#slide2::before {
+    top: 0;
+    margin-top: calc( calc( 35.35% / -2));
+    left: calc( calc( 35.35% / -2));
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.saloninfo div.secwrap div#slide2::after {
+    bottom: 53px;
+    margin-bottom: calc( calc( 35.35% / -2));
+    right: calc( calc( 35.35% / -2));
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
 
 /*---------------------
 section_class_style
@@ -720,14 +867,17 @@ section_class_style
     width: 50%;
 }
 
-.style .btn{
-    display: none;
-}
 
 .style div.secwrap_b div.body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.style div.secwrap_b div.body div.btn {
+    position: absolute;
+    bottom: 10px;
+    right: 60px;
 }
 
 
@@ -828,6 +978,82 @@ button.btn2 a{
     background-size: cover;
 }
 
+.newsblog div.blog div.body div.img::before, body.top section.newsblog div.blog div.body div.img::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    width: 17.675%;
+    padding-top: 17.675%;
+    z-index: 3;
+    transform-origin: center center;
+    -moz-transform-origin: center center;
+    -webkit-transform-origin: center center;
+}
+
+.newsblog div.blog div.body div.img::before {
+    top: 0;
+    margin-top: calc( calc( 17.675% / -2));
+    left: calc( calc( 17.675% / -2));
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.newsblog div.blog div.body div.img::after {
+    bottom: 55px;
+    margin-bottom: calc( calc( 17.675% / -2));
+    right: calc( calc( 17.675% / -2));
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+button.btn2 a::after, button.btn2 input[type="submit"]::after {
+    content: "";
+    position: absolute;
+    display: block;
+    right: 3rem;
+    width: 72px;
+    top: 50%;
+    margin-top: -2px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 0.5px solid #000;
+}
+
+.newsblog div.btn a:hover {
+    background-color: #666666;
+    color: #fff;
+}
+
+button.btn2:hover a::after,
+button.btn2:hover input[type="submit"]::after {
+    border-color: #fff; 
+}
+
+totop {
+    position: fixed;
+    cursor: pointer;
+    display: block;
+    bottom: 0rem;
+    right: 0rem;
+    height: 6rem;
+    width: 6rem;
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    border: 0.5px solid #000;
+    z-index: 999;
+}
+
+.totop.on {
+    opacity: 1;
+    visibility: visible;
+    bottom: 402.742px;
+}
+
+
 
 
 
@@ -892,6 +1118,7 @@ button.ftbtn a span {
     padding: 1rem 0;
     display: block;
 }
+
 
 
 
