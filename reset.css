@@ -16,6 +16,11 @@ main, section, nav, div, ul, li {
     box-sizing: border-box;
 }
 
+html small, html .sm, html .cap, body small, body .sm, body .cap {
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+}
+
 body, th, td, h1, h2, h3, h4, h5, h6, pre, input, textarea, option, div, p, dt, dd, li, address {
     font-weight: normal;
     font-style: normal;
