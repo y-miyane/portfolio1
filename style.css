@@ -130,8 +130,14 @@ header div.header_wrap div.logo {
     right: 0;
     z-index: 30;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.8s;
+    opacity: 0;
+    visibility: hidden;
   }
+#hmb.on{
+    opacity: 1;
+    visibility: inherit;
+}
  
   #hmb span {
     width: 30px;
@@ -930,7 +936,7 @@ section_newsblog
 
 .secwrap2 div.sec {
     width: 50%;
-    padding: 0 86px;
+    padding: 0 5rem;
 }
 
 
@@ -995,6 +1001,9 @@ body.top section.newsblog div.news div.txt a {
     border-bottom: 1px solid #666666;
 }
 
+body.top section.newsblog div.news div.txt{
+    height: 235.333px;
+}
 
 
 button.btn2 a{
@@ -1066,7 +1075,7 @@ button.btn2:hover input[type="submit"]::after {
     border-color: #fff; 
 }
 
-totop {
+.totop {
     position: fixed;
     cursor: pointer;
     display: block;
@@ -1077,16 +1086,45 @@ totop {
     background-size: contain;
     background-position: top center;
     background-repeat: no-repeat;
-    border: 0.5px solid #000;
+    background-image: url(./images/scissors.png);
     z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    transform-origin: center center;
+    -moz-transform-origin: center center;
+    -webkit-transform-origin: center center;
+    transform: rotate(0deg);
+    transition: opacity 400ms cubic-bezier(0.25, 0.1, 0.25, 1) 0ms, visibility 400ms cubic-bezier(0.25, 0.1, 0.25, 1) 0ms;
 }
 
-.totop.on {
-    opacity: 1;
-    visibility: visible;
-    bottom: 402.742px;
+
+
+.totopsp {
+    position: relative;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
+.totopsp{
+    display: none;
+}
+
+.totopsp div.icon {
+    width: 100px;
+    height: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(./images/scissors.png);
+    transform: rotate(-90deg);
+}
+
+.totopsp p {
+    text-align: center;
+    margin-top: 0.8rem;
+}
 
 
 

@@ -613,16 +613,23 @@
       ScrollReveal().reveal('.saloninfo', { delay: 100, origin:"bottom"});
       ScrollReveal().reveal('.style', { delay: 100, origin:"bottom"});
       ScrollReveal().reveal('.newsblog', { delay: 50, duration: 1000, distance:"0", origin:"bottom"});
-  </script>
-  <script>
-    const hmbBtn = 
-  document.getElementById("hmb");
-  const header = 
-  document.getElementById("header");
+  
+        const hmbBtn = 
+      document.getElementById("hmb");
+      const header = 
+      document.getElementById("header");
 
-  hmbBtn.addEventListener('click', function() {
-    header.classList.toggle('active');
-  });
-  </script>
+      hmbBtn.addEventListener('click', function() {
+        header.classList.toggle('active');
+      });
+
+      const $hmb = document.getElementById('hmb');
+      window.addEventListener('scroll' , () => {
+        let scrollY =window.scrollY
+        if(200 < scrollY){
+          $hmb.classList.add('on');
+        }
+      })
+    </script>
   </body>
 </html>  
