@@ -175,7 +175,7 @@
                   <ul class="row r2">
                     <li class="Parallax Parallax_on">
                       <a href="/menu">
-                        <div class="liwrap">
+                        <div class="liwrap" onmouseover="addHoverClass(this)" onmouseout="removeHoverClass(this)">
                           <div class="img">
                             <div class="imgwrap">
                               <img class="img1" src="./images/Figure-1.png" alt="CUT + SHAMPOO">
@@ -480,15 +480,7 @@
             </div>
           </div>
         </section>
-        <div class="totop on"></div>
-        <div class="totopsp">
-          <div class="icon"></div>
-          <p>
-            <span>
-              TOP
-            </span>
-          </p>
-        </div>
+        
       </main>
       <footer>
         <div id="reserve">
@@ -614,7 +606,7 @@
       ScrollReveal().reveal('.style', { delay: 100, origin:"bottom"});
       ScrollReveal().reveal('.newsblog', { delay: 50, duration: 1000, distance:"0", origin:"bottom"});
   
-        const hmbBtn = 
+      const hmbBtn = 
       document.getElementById("hmb");
       const header = 
       document.getElementById("header");
@@ -630,6 +622,14 @@
           $hmb.classList.add('on');
         }
       })
+
+      function addHoverClass(element) {
+        element.classList.add('hovered');
+      }
+
+      function removeHoverClass(element) {
+        element.classList.remove('hovered');
+      }
     </script>
   </body>
 </html>  
