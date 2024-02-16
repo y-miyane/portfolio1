@@ -80,6 +80,10 @@ header .header_wrap {
     margin-right: 60px;
 }
 
+.gnav_tc{
+    position: absolute;
+    right: 140px;
+}
 
 .gnav_tc ul {
     list-style: none;
@@ -116,6 +120,25 @@ header div.header_wrap div.logo {
     height: 1rem;
     background-image: url(./images/line.png);
     background-repeat: repeat-x;
+}
+
+.gnav_tc ul li {
+    width: auto;
+    margin-bottom: 0;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;
+    position: relative;
+}
+
+.gnav_tc ul li a span.text {
+    font-size: 12px;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid transparent;
+}
+
+.gnav_tc ul li a {
+    line-height: 50px;
 }
 
 /*
@@ -556,6 +579,7 @@ section_class_menu
 -----------------------*/
 .secwrap div.body {
     position: relative;
+    transform: translateY(-200px); 
 }
 .secwrap {
     width: 88%;
@@ -566,9 +590,22 @@ section_class_menu
     margin-bottom: 10rem 
 }
 
-.menu .secwrap .ttl {
+body.top section.menu div.secwrap div.ttl{
     position: relative;
     left: 0;
+    top: 0;
+    width: 100px;
+}
+
+h2 span:before {
+    margin-bottom: 3rem;
+    width: 2.2rem;
+    height: 1.74rem;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(./images/scissors.png);
+    transform: rotate(90deg);
 }
 
 .menu div.secwrap div.body ul li a div.liwrap div.txt {
@@ -594,9 +631,6 @@ ul.row {
     justify-content: flex-start;
     align-items: stretch;
     display: -webkit-flex;
-    -webkit-flex-wrap: wrap;
-    -webkit-justify-content: flex-start;
-    -webkit-align-items: stretch;
 }
 
 .liwrap div.img {
