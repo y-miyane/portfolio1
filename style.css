@@ -956,11 +956,7 @@ section_class_style
 }
 
 
-.style div.secwrap_b div.body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .style div.secwrap_b div.body div.btn {
     position: absolute;
@@ -968,7 +964,9 @@ section_class_style
     right: 60px;
 }
 
-
+.show_sp {
+    display: none;
+}
 
 /*---------------------
 section_newsblog
@@ -1121,6 +1119,59 @@ button.btn2 a::after, button.btn2 input[type="submit"]::after {
 button.btn2:hover a::after,
 button.btn2:hover input[type="submit"]::after {
     border-color: #fff; 
+}
+
+main div.totop {
+    position: fixed;
+    cursor: pointer;
+    display: block;
+    bottom: 0rem;
+    right: 0rem;
+    height: 6rem;
+    width: 6rem;
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    border: #000;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    transform-origin: center center;
+    transform: rotate(0deg);
+    transition: opacity 400ms cubic-bezier(0.25, 0.1, 0.25, 1) 0ms, visibility 400ms cubic-bezier(0.25, 0.1, 0.25, 1) 0ms;
+   
+}
+
+main div.totop.on {
+    opacity: 1;
+    visibility: visible;
+}
+
+main div.totopsp {
+    position: relative;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+main div.totopsp div.icon {
+    width: 100px;
+    height: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(./images/scissors.png);
+    
+}
+
+main div.totopsp p {
+    text-align: center;
+    margin-top: 0.8rem;
+}
+
+main div.totopsp p span {
+    font-size: 0.8rem;
 }
 
 
