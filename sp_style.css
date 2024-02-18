@@ -31,38 +31,134 @@ header div.header_wrap {
     display: block;
 }
 
-header div.header_wrap div.logo {
-    position: absolute;
-    width: 15%;
-    max-width: 176px;
-    z-index: 50;
-}
-
-.hamburger {
+#hmb {
     width: 75px;
     height: 75px;
+    opacity: 1;
+    visibility: visible;
 }
 
-.hamburger span {
-    width: 35px;
+#hmb span {
+    width: 25px;
     left: 21px;
 }
 
-.hamburger span:nth-child(1) {
-    top: 26px;
+#hmb span:nth-child(1) {
+    top: 25px;
 }
 
-.hamburger span:nth-child(2) {
-    top: 37px;
+#hmb span:nth-child(2) {
+    top: 32px;
 }
 
-.hamburger span:nth-child(3) {
-    top: 48px;
+#hmb span:nth-child(3) {
+    top: 39px;
 }
+
+.active #hmb span:nth-child(1) {
+    top: 30px;
+    left: 21px;
+}
+
+.active #hmb span:nth-child(2), .active #hmb span:nth-child(3) {
+    top: 30px 
+}
+
+#popupnavi {
+    width: 100%;
+    height: 100%;
+    background-color: #DBE9F2;
+    background-image: none;
+}
+
+
+#popupnavi::before {
+    top: 0;
+    margin-top: calc( calc( 45% / -2) + 1px );
+    right: calc( calc( 45% / -2) - 1px );
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+#popupnavi::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    width: 45%;
+    padding-top: 45%;
+    z-index: 3;
+    transform-origin: center center;
+}
+
+
+#popupnavi .logo {
+    width: 30%;
+    display: block;
+}
+
+#navi .logo a img {
+    display: block;
+    width: 100%;
+}
+
+#popupnavi .hr {
+    display: block;
+}
+
+#popupnavi .hr::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1rem;
+    background-image: url(./images/line.png);
+    background-repeat: repeat-x;
+}
+
+#navi ul li {
+    padding: 1rem 0;
+}
+
+#navi .btn {
+    display: block;
+}
+
+#navi button.ftbtn {
+    width: 180px;
+    margin-top: 1rem;
+}
+
+#popupnavi button.ftbtn a {
+    background-color: transparent;
+    border: #666666 2px solid;
+    width: 100%;
+    height: auto;
+    line-height: 1;
+}
+
 
 .logo img {
     width: 84px;
     width: 120%;
+}
+header div.header_wrap div.logo {
+    position: absolute;
+    width: 25%;
+    max-width: 176px;
+    z-index: 50;
+    top: -30px;
+    left: -25px;
+}
+
+.triming.t {
+    margin-top: -59px;
+    left: -59px;
+}
+
+.triming.b {
+    margin-bottom: 78px;
+    right: -59px;
 }
 
 .header_wrap nav.gnav_tc {
@@ -114,8 +210,8 @@ main section div.secwrap {
 body.top section.concept div.secwrap::before {
     width: 8rem;
     height: 8rem;
-    top: 0.5rem;
-    left: 0.5rem;
+    top: -1rem;
+    left: 1rem;
 }
 
 #concept div.secwrap div.img {
@@ -312,6 +408,10 @@ body.top section.secimg div.img {
     height: 10rem;
 }
 
+.secimg div.img::before, body.top section.secimg div.img::after {
+    display: none;
+}
+
 body.top section.saloninfo div.secwrap div#slide2 {
     height: 16rem;
     width: 100%;
@@ -322,6 +422,10 @@ body.top section.saloninfo div.secwrap::before {
     width: 8rem;
     height: 8rem;
     top: 1rem;
+}
+
+.saloninfo div.secwrap div#slide2::after {
+    bottom: 0px;
 }
 
 
@@ -400,6 +504,13 @@ body.top section.style div.secwrap_b div.body::before {
     z-index: 0;
 }
 
+#slide .fade li img {
+    object-fit: cover;
+    width: 100%;
+    height: 306px;
+    position: absolute;
+    inset: -54.7572px auto auto 0%;
+}
 
 .style div.secwrap_b div.body::before{
     display: block;
@@ -422,7 +533,7 @@ body.top section.style div.secwrap_b::before {
     padding-top: 10%;
     z-index: 0;
     background-color: #DBE9F2;
-    top: 68px;
+    top: 21px;
     left: 0;
 }
 
@@ -444,7 +555,7 @@ body.top section.style div.secwrap_b::after {
     transform-origin: center center;
     -moz-transform-origin: center center;
     -webkit-transform-origin: center center;
-    top: 18.4%;
+    top: 7.4%;
     left: 6.8%;
     transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -528,6 +639,11 @@ main div.totopsp {
     display: block;
 }
 
+main div.totopsp {
+    position: relative;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
 
 
 .footer_wrap {

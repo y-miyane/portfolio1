@@ -18,16 +18,33 @@
             <span></span>
             <span></span>
           </div>
-          <nav id="navi">
-            <ul class="nav_menu">
-              <li><a href="#concept">CONCEPT</a></li>
-              <li><a href="#menu">MENU</a></li>
-              <li><a href="#saloninfo">SALONINFO</a></li>
-              <li><a href="#style">STYLE</a></li>
-              <li><a href="#blog">BLOG</a></li>
-              <li><a href="#reserve">RESERVE</a></li>
-            </ul>
-          </nav>
+          <div id="popupnavi">
+            <nav id="navi">
+              <div class="logo">
+                <a href="/">
+                  <img src="./images/logo_t.png"  alt="">
+                </a>
+              </div>
+              <div class="hr"></div>
+              <ul class="nav_menu">
+                <li><a href="#concept">CONCEPT</a></li>
+                <li><a href="#menu">MENU</a></li>
+                <li><a href="#saloninfo">SALONINFO</a></li>
+                <li><a href="#style">STYLE</a></li>
+                <li><a href="#blog">BLOG</a></li>
+                <li><a href="#reserve">RESERVE</a></li>
+              </ul>
+              <div class="btn">
+                <button class="ftbtn">
+                  <a href="tel:0262177173" class="tel">
+                    <span>
+                      026-217-7173
+                    </span>
+                  </a>
+                </button>
+              </div>
+            </nav>
+          </div>
           <h1>
             <div class="logo">
               <img src="./images/logo_t.png" alt="T">
@@ -112,7 +129,7 @@
                     Your Beauty Experience Redefined.
                   </span>
                 </div>
-                <div class="scroll">
+                <div class="scroll" onclick="scrollToSection('concept')">
                   <img src="./images/scissors.png" alt="SCROLL">
                   <p class="cap">
                     <span>
@@ -485,9 +502,9 @@
             </div>
           </div>
         </section>
-        <div class="totop on" style="bottom: 2rem;"></div>
+        <div class="totop" style="bottom: 509.586px;" onclick="scrollToSection('header')"></div>
         <div class="totopsp">
-          <div class="icon">
+          <div class="icon" onclick="scrollToSection('header')">
           </div>
           <p>
             <span>
@@ -619,6 +636,7 @@
       ScrollReveal().reveal('.saloninfo', { delay: 100, origin:"bottom"});
       ScrollReveal().reveal('.style', { delay: 100, origin:"bottom"});
       ScrollReveal().reveal('.newsblog', { delay: 50, duration: 1000, distance:"0", origin:"bottom"});
+
   
       const hmbBtn = 
       document.getElementById("hmb");
@@ -629,12 +647,52 @@
         header.classList.toggle('active');
       });
 
+      window.addEventListener('scroll', function() {
+        const header = document.getElementById('header');
+          if (window.scrollY > 0) {
+            header.style.transition = 'opacity 0.3s ease-in-out';
+            header.classList.remove('active');
+            }
+        });
+
+
+      function scrollToSection(concept) {
+        var targetSection = document.getElementById(concept);
+      
+        if (concept) {
+            targetSection.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+      }
+
+      const $totop = document.querySelector('.totop');
+
+      window.addEventListener('scroll', () => {
+          let scrollY = window.scrollY;
+          if (5000 < scrollY) {
+              $totop.classList.add('on');
+          } else {
+              $totop.classList.remove('on');
+          }
+      });
+
+      function scrollToSection(header) {
+        var targetSection = document.getElementById(header);
+      
+        if (header) {
+            targetSection.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+      }
+
       const $hmb = document.getElementById('hmb');
       window.addEventListener('scroll' , () => {
         let scrollY =window.scrollY
         if(200 < scrollY){
           $hmb.classList.add('on');
-        }
+        } 
       })
 
       function addHoverClass(element) {
