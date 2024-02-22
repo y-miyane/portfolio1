@@ -1383,7 +1383,13 @@ button.ftbtn a span {
     letter-spacing: 0.12em;
     cursor: pointer;
     opacity: 1;
+    transition: opacity 400ms cubic-bezier(0.25, 0.1, 0.25, 1) 0ms;
 }
+
+.textlink a:hover {
+    opacity: 0.5;
+}
+
 
 .copyright {
     text-align: center;

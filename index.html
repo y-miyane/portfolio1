@@ -113,7 +113,7 @@
                       <img src="./images/salon_top_1.jpg" alt="">
                     </li>
                     <li>
-                      <img src="./images/salon_top_2.jpg" alt="">
+                      <img src="./images/salon_top_2.png" alt="">
                     </li>
                     <li>
                       <img src="./images/saloninfo.jpg" alt="">
@@ -603,7 +603,7 @@
                     </button>
                   </div>
                   <p class="textlink cap">
-                    <a href="mailto:info@origami-hair.jp">
+                    <a href="">
                       <span>
                         お問い合わせはこちら
                       </span>
@@ -692,7 +692,9 @@
         let scrollY =window.scrollY
         if(200 < scrollY){
           $hmb.classList.add('on');
-        } 
+        } else {
+        $hmb.classList.remove('on');
+        }
       })
 
       function addHoverClass(element) {
