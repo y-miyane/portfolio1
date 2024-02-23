@@ -628,13 +628,14 @@ p.lead {
     text-align: right;
     position: relative;
     z-index: 10;
+    transition: background-image 1s ease;
 }
 
-.btn1 div.a:hover{
+.concept_all:hover .btn1 div.a{
     background-image: url(./images/btn2.png);
 }
 
-.btn1 div.a:hover span {
+.concept_all:hover .btn1 div.a span {
     color: #fff
 }
 
@@ -746,10 +747,6 @@ a {
 }
 
 
-
-
-
-
 img {
     overflow-clip-margin: content-box;
     overflow: clip;
@@ -805,9 +802,16 @@ h3{
     width: auto;
     bottom: -40px;
     right: 0;
+    transition: background-image 1s ease;
 }
 
+#menu .btn1 div.a:hover {
+    background-image: url(./images/btn2.png);
+}
 
+#menu .btn1 div.a:hover span {
+    color: #fff
+}
 
 
 /*---------------------
@@ -998,6 +1002,18 @@ body.top section.saloninfo div.secwrap div.txt {
     -moz-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
+
+
+.saloninfo_all:hover .btn1 div.a{
+    background-image: url(./images/btn2.png);
+}
+
+.saloninfo_all:hover .btn1 div.a span {
+    color: #fff
+}
+
+
+
 
 /*---------------------
 section_class_style
@@ -1265,19 +1281,22 @@ main div.totop {
     opacity: 0;
     transform-origin: center center;
     transform: rotate(0deg);
-    transition: opacity 400ms cubic-bezier(0.25, 0.1, 0.25, 1) 0ms, visibility 400ms cubic-bezier(0.25, 0.1, 0.25, 1) 0ms;
+    transition: opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0ms, visibility 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0ms;
    
 }
 
 main div.totop.on {
     opacity: 1;
     visibility: visible;
+    bottom: 50%;
+    transform: translateY(-50%) rotate(0deg);
 }
 
 
 
 .totopsp {
     display: none;
+    bottom: 2rem;
 }
 
 main div.totopsp div.icon {

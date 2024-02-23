@@ -141,38 +141,40 @@
           </div>
         </section>
         <section class="concept">
-          <div id="concept">
+            <div id="concept">
               <div class="secwrap Parallax Parallax_on">
-                <div class="img">
-                  <div class="imgwrap"></div>
-                </div>
-                <div class="txt">
-                  <h2>
-                    <span>
-                      CONCEPT
-                    </span>
-                  </h2>
-                  <p class="lead">
-                    <span>
-                      何千何万と形を変える折り紙のように、
-                      <br>
-                      髪にもいくつものデザインを。
-                    </span>
-                  </p>
-                  <div class="btn">
-                    <button class="btn1">
-                      <div class="a">
-                        <span>
-                          MORE
-                          <br class="show_pctb"> 
-                          DETAIL
-                        </span>
-                      </div>
-                    </button>
+                <a href="" class="concept_all">
+                  <div class="img">
+                    <div class="imgwrap"></div>
                   </div>
-                </div>
+                  <div class="txt">
+                    <h2>
+                      <span>
+                        CONCEPT
+                      </span>
+                    </h2>
+                    <p class="lead">
+                      <span>
+                        何千何万と形を変える折り紙のように、
+                        <br>
+                        髪にもいくつものデザインを。
+                      </span>
+                    </p>
+                    <div class="btn">
+                      <button class="btn1">
+                        <div class="a">
+                          <span>
+                            MORE
+                            <br class="show_pctb"> 
+                            DETAIL
+                          </span>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </a>
             </div>
-        </section>
+          </section>
         <section class="line">
           <div class="secwrap">
             <div class="hr">
@@ -314,56 +316,56 @@
         <section class="saloninfo">
           <div id="saloninfo">
             <div class="secwrap Parallax Parallax_on">
-              <a href="">
-              <!-- <div class="img">
-                <div class="imgwrap">
-                </div>
-              </div> -->
-              <div id="slide2">
-                <div class="slide_wrap">
-                  <ul>
-                    <li class="si_pic1">
-                      <div class="ci_wrap">
-                        <img src="./images/saloninfo.jpg" alt="遊び心のある壁紙と黒板。">
-                      </div>
-                    </li>
-                    <!-- <li class="si_pic2">
-                      <div class="ci_wrap">
-                        <img src="./images/concept.jpg" alt="北欧家具で落ち着く内装になっています。">
-                      </div>
-                    </li>-->
-                  </ul>
-                </div>
-              </div>
-              <div class="txt">
-                <h2>
-                  <span>
-                    SALONINFO
-                  </span>
-                </h2>
-                <p>
-                  <span>
-                    黒板を使用した遊び心ある壁紙。
-                    <br>
-                    北欧家具を基調としたインテリア。
-                    <br>
-                    お子様はファミリールームでのびのびと。
-                    <br>
-                    温かみのあるサロンでリラックスしてください。
-                  </span>
-                </p>
-              </div>
-              <div class="btn">
-                <button class="btn1">
-                  <div class="a">
-                    <span>
-                      MORE
-                      <br class="show_pctb"> 
-                      DETAIL
-                    </span>
+              <a href="" class="saloninfo_all">
+                <!-- <div class="img">
+                  <div class="imgwrap">
                   </div>
-                </button>
-              </div>
+                </div> -->
+                <div id="slide2">
+                  <div class="slide_wrap">
+                    <ul>
+                      <li class="si_pic1">
+                        <div class="ci_wrap">
+                          <img src="./images/saloninfo.jpg" alt="遊び心のある壁紙と黒板。">
+                        </div>
+                      </li>
+                      <!-- <li class="si_pic2">
+                        <div class="ci_wrap">
+                          <img src="./images/concept.jpg" alt="北欧家具で落ち着く内装になっています。">
+                        </div>
+                      </li>-->
+                    </ul>
+                  </div>
+                </div>
+                <div class="txt">
+                  <h2>
+                    <span>
+                      SALONINFO
+                    </span>
+                  </h2>
+                  <p>
+                    <span>
+                      黒板を使用した遊び心ある壁紙。
+                      <br>
+                      北欧家具を基調としたインテリア。
+                      <br>
+                      お子様はファミリールームでのびのびと。
+                      <br>
+                      温かみのあるサロンでリラックスしてください。
+                    </span>
+                  </p>
+                </div>
+                <div class="btn">
+                  <button class="btn1">
+                    <div class="a">
+                      <span>
+                        MORE
+                        <br class="show_pctb"> 
+                        DETAIL
+                      </span>
+                    </div>
+                  </button>
+                </div>
               </a>
             </div>
           </div>
@@ -502,7 +504,7 @@
             </div>
           </div>
         </section>
-        <div class="totop" style="bottom: 509.586px;" onclick="scrollToSection('header')"></div>
+        <div class="totop"  onclick="scrollToSection('header')"></div>
         <div class="totopsp">
           <div class="icon" onclick="scrollToSection('header')">
           </div>
@@ -667,13 +669,24 @@
       }
 
       const $totop = document.querySelector('.totop');
+      let isTotopVisible = false;
 
       window.addEventListener('scroll', () => {
           let scrollY = window.scrollY;
-          if (5000 < scrollY) {
-              $totop.classList.add('on');
+
+          if (scrollY > 5000) {
+              if (!isTotopVisible) {
+                  $totop.classList.add('on');
+                  isTotopVisible = true;
+                  $totop.style.bottom = '500px';
+              }
+          } else if (scrollY < 1500) {
+              if (isTotopVisible) {
+                  $totop.classList.remove('on');
+                  isTotopVisible = false;
+              }
           } else {
-              $totop.classList.remove('on');
+              $totop.style.bottom = Math.max(0, 1500 - scrollY) + 'px';
           }
       });
 
