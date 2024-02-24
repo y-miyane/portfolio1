@@ -3,7 +3,7 @@
 
 main {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1480px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -33,8 +33,8 @@ button {
 .btn1 div.a span {
     position: absolute;
     color: #000;
-    right: 20px;
-    bottom: 20px;
+    right: 9px;
+    bottom: 9px;
     line-height: 1.5;
     text-align: center;
 }
@@ -69,10 +69,6 @@ header .header_wrap {
     position: relative;
 }
 
-.header_wrap nav.gnav {
-    position: relative;
-    padding-top: 1rem;
-}
 
 .logo img {
     width: 150px;
@@ -82,7 +78,8 @@ header .header_wrap {
 
 .gnav_tc{
     position: absolute;
-    right: 140px;
+    right: 20px;
+    margin-top: 1rem;
 }
 
 .gnav_tc ul {
@@ -94,7 +91,7 @@ header .header_wrap {
 
 header div.header_wrap div.logo {
     position: relative;
-    width: 15%;
+    width: 100%;
     max-width: 176px;
     z-index: 50;
 }
@@ -325,14 +322,14 @@ section_mv
     height: 64vh;
 }
 
-.triming.t{
-    margin-top: -133.5px;
-    left: -133.5px
+.triming.t {
+    margin-top: -158px;
+    left: -158px;
 }
 
-.triming.b{
-margin-bottom: 131.5px;
-    right: -133.5px
+.triming.b {
+    margin-bottom: 156px;
+    right: -158px;
 }
 
 #slide div.triming.t {
@@ -491,6 +488,16 @@ section_concept
     position: relative;
 }
 
+.secwrap {
+    width: 75%;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    position: relative;
+}
+
 #concept div.secwrap div.img {
     width: 75%;
     height: 640px;
@@ -507,7 +514,7 @@ section_concept
     background: url(./images/tri_line.png) center center no-repeat;
     background-size: cover;
     top: 1rem;
-    left: 3rem;
+    left: -1rem;
     z-index: 10;
 }
 
@@ -603,6 +610,7 @@ p.lead {
 .btn {
     text-align: right;
     width: 100%;
+    height: 8rem;
 }
 
 .show_pctb {
@@ -620,8 +628,8 @@ p.lead {
 .btn1 div.a {
     overflow: hidden;
     font-size: 1rem;
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
     background-repeat: no-repeat;
     background-image: url(./images/btn1.png);
     background-size: contain;
@@ -646,14 +654,7 @@ section_class_menu
     position: relative;
     transform: translateY(-200px); 
 }
-.secwrap {
-    width: 88%;
-    max-width: 1080px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10rem;
-    margin-bottom: 10rem 
-}
+
 
 body.top section.menu div.secwrap div.ttl{
     position: relative;
@@ -800,7 +801,7 @@ h3{
 .menu .secwrap .body .btn {
     position: absolute;
     width: auto;
-    bottom: -40px;
+    bottom: 0;
     right: 0;
     transition: background-image 1s ease;
 }
@@ -869,6 +870,7 @@ section_class_secimg
     -moz-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
+
 
 /*---------------------
 section_class_saloninfo
@@ -939,8 +941,8 @@ body.top section.saloninfo div.secwrap div.txt {
 
 .saloninfo div.secwrap div.btn {
     position: absolute;
-    bottom: 47px;
-    right: 112px;
+    bottom: 32px;
+    right: 0;
 }
 
 .saloninfo div.secwrap::before {
@@ -950,8 +952,8 @@ body.top section.saloninfo div.secwrap div.txt {
     height: 20rem;
     background: url(./images/tri_line.png) center center no-repeat;
     background-size: cover;
-    top: -1rem;
-    right: 3rem;
+    top: 0rem;
+    right: -3rem;
     z-index: 10;
     transform: rotate(90deg);
     -moz-transform: rotate(90deg);
@@ -995,7 +997,7 @@ body.top section.saloninfo div.secwrap div.txt {
 }
 
 .saloninfo div.secwrap div#slide2::after {
-    bottom: 53px;
+    bottom: 0;
     margin-bottom: calc( calc( 35.35% / -2));
     right: calc( calc( 35.35% / -2));
     transform: rotate(45deg);
@@ -1029,7 +1031,7 @@ section_class_style
     width: 10%;
     padding-top: 10%;
     z-index: -2;
-    background-color: #DBE9F2;
+    background-color: #E5F3F8;
     top: 0;
     left: 0;
 }
@@ -1037,8 +1039,8 @@ section_class_style
 .style div.secwrap_b div.ttl {
     position: absolute;
     z-index: 10;
-    top: 73%;
-    left: -0.5%;
+    top: 53%;
+    left: 3.5%;
     margin-bottom: 0;
     transform-origin: top left;
     -moz-transform-origin: top left;
@@ -1070,11 +1072,15 @@ section_class_style
     transform-origin: center center;
     -moz-transform-origin: center center;
     -webkit-transform-origin: center center;
-    top: 16.4%;
+    top: 14.4%;
     left: 2.8%;
     transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+}
+
+#style img{
+    width: 100%;
 }
 
 .style div.secwrap_b div.body div.img {
@@ -1084,8 +1090,8 @@ section_class_style
 
 .style div.secwrap_b div.body div.btn {
     position: absolute;
-    bottom: 10px;
-    right: 60px;
+    bottom: 0;
+    right: 0;
 }
 
 .show_sp {
@@ -1318,6 +1324,14 @@ main div.totopsp p {
 
 main div.totopsp p span {
     font-size: 0.8rem;
+}
+
+.style_all:hover .btn1 div.a{
+    background-image: url(./images/btn2.png);
+}
+
+.style_all:hover .btn1 div.a span {
+    color: #fff
 }
 
 

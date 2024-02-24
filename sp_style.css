@@ -96,6 +96,7 @@ header div.header_wrap {
 #popupnavi .logo {
     width: 30%;
     display: block;
+    left: 34%;
 }
 
 #navi .logo a img {
@@ -208,10 +209,10 @@ main section div.secwrap {
 }
 
 body.top section.concept div.secwrap::before {
-    width: 8rem;
+    width: 10rem;
     height: 8rem;
-    top: -1rem;
-    left: 1rem;
+    top: 0rem;
+    left: -0.5rem;
 }
 
 #concept div.secwrap div.img {
@@ -375,7 +376,7 @@ body.top section.menu div.secwrap div.body ul li a div.liwrap div.img {
 }
 
 .menu div.secwrap div.body ul li a div.liwrap div.txt {
-    top: 200px;
+    top: 150px;
     left: 0px;
 }
 
@@ -421,7 +422,8 @@ body.top section.saloninfo div.secwrap div#slide2 {
 body.top section.saloninfo div.secwrap::before {
     width: 8rem;
     height: 8rem;
-    top: 1rem;
+    top: 0rem;
+    right: -2rem;
 }
 
 .saloninfo div.secwrap div#slide2::after {
@@ -485,8 +487,8 @@ body.top section.style div.secwrap_b div.ttl {
 
 #style .secwrap_b .ttl {
     position: relative;
-    top: 200px;
-    left: -15px;
+    top: 170px;
+    left: -20px;
     width: 50%;
 }
 
