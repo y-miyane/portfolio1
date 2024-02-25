@@ -49,6 +49,7 @@ ul {
 }
 
 
+
 /*---------------------
 header
 -----------------------*/
@@ -138,6 +139,22 @@ header div.header_wrap div.logo {
 
 .gnav_tc ul li a {
     line-height: 50px;
+}
+
+.gnav_tc ul li a .cover {
+    position: absolute;
+    bottom: 5px;
+    left: 0; 
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    transition: height 0.4s ease, opacity 0.4s ease;
+    opacity: 0; 
+}
+
+.gnav_tc ul li a:hover .cover {
+    height: 0.7px;
+    opacity: 1;
 }
 
 /*
@@ -244,6 +261,7 @@ header div.header_wrap div.logo {
 #navi .nav_menu a {
     color: #000;
     font-weight: bold;
+    padding-bottom: 5px;
 }
 
 #popupnavi .btn {
@@ -282,21 +300,11 @@ header div.header_wrap div.logo {
     
 }
 
-.gnav_tc ul li a .cover {
-    position: absolute;
-    bottom: 5px;
-    left: 0; 
-    width: 100%;
-    height: 0;
-    background-color: #000;
-    transition: height 0.4s ease, opacity 0.4s ease;
-    opacity: 0; 
+#navi .nav_menu li a:hover {
+    border-bottom: 2px solid #000; 
 }
 
-.gnav_tc ul li a:hover .cover {
-    height: 0.7px;
-    opacity: 1;
-}
+
 
 /*---------------------
 section_mv
@@ -323,13 +331,13 @@ section_mv
 }
 
 .triming.t {
-    margin-top: -158px;
-    left: -158px;
+    margin-top: -157.5px;
+    left: -157.5px;
 }
 
 .triming.b {
-    margin-bottom: 156px;
-    right: -158px;
+    margin-bottom: 157.5px;
+    right: -157.5px;
 }
 
 #slide div.triming.t {
@@ -338,9 +346,12 @@ section_mv
 
 #slide div.triming {
     position: absolute;
-    width: 24.25%;
+    width: 26.25%;
     max-width: 314px;
 }
+
+
+
 
 body.load.top section.mv div.secwrap_b div#slide div.triming::before {
     transform-origin: center center;
@@ -1334,6 +1345,14 @@ main div.totopsp p span {
     color: #fff
 }
 
+button.btn2 a span, button.btn2 input[type="submit"] span {
+    font-size: 1rem;
+    text-align: left;
+    line-height: 2;
+    font-family: "Asap", YuGothic, "游ゴシック", "MS Ｐゴシック", "MS P Gothic", "MS-PGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, arial, helvetica, clean, sans-serif;
+    transition: color 400ms cubic-bezier(0.25, 0.1, 0.25, 1) 0ms;
+}
+
 
 /*---------------------
 footer
@@ -1362,6 +1381,14 @@ footer {
 h4 {
     margin-bottom: 30px;
 }
+
+footer div.footer_wrap div.f_nav div.f_nav_box div.txt p.opentime {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+
 
 footer div.footer_wrap div.f_nav div.f_nav_box div.txt div.btn button.ftbtn {
     width: 100%;

@@ -79,3 +79,7 @@ body.top h2 span::before, body.top h2 span::after {
     display: block;
 }
 
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
