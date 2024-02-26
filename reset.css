@@ -67,7 +67,7 @@ html p span, html dt span, html dd span, body p span, body dt span, body dd span
 html h1, html h2, html h3, html h4, html .lv1, html .lv2, html .lv3, html .lv4, body h1, body h2, body h3, body h4, body .lv1, body .lv2, body .lv3, body .lv4 {
     line-height: 1;
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: 0.12rem;
 }
 
 dl.tb dt, dl.tb dd {
