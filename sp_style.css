@@ -177,7 +177,7 @@
         margin-bottom: 8rem;
     }
 
-    body.top section.secimg div.img {
+    body.top .secimg div.img {
         height: 24rem;
     }
 
@@ -248,13 +248,7 @@
         width: 100%;
     }
 
-    #wrapAll .btn1 div.a:hover {
-        background-image: none;
-    }
-
-    #wrapAll .btn1 div.a:hover span{
-        color: #000;
-    }
+    
 
     .textlink {
         margin-top: 3rem;
@@ -317,6 +311,14 @@
 
     body.top section.concept div.secwrap div.txt p.lead {
         text-align: center;
+    }
+
+    #wrapAll:hover .btn1 div.a {
+        background-image: none;
+    }
+
+    #wrapAll :hover .btn1 div.a span{
+        color: #000;
     }
 
     body.top section.concept div.secwrap div.btn {
@@ -423,18 +425,33 @@
         margin-bottom: 4rem;
     }
 
-    body.top section.secimg div.img {
+    .secimg div.secwrap {
+        width: 100% !important;
+    }
+
+    .secimg .secwrap {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    body.top .secimg{
+        padding: 0 1rem;
+    }
+
+    body.top .secimg div.img {
         height: 10rem;
     }
 
-    body.top section.secimg div.img div.imgwrap {
-        background: url(./images/secming.webp) center top no-repeat;
+    .secimg div.img div.imgwrap {
+        background: url(./images/secming.png) center top no-repeat;
         background-size: 100%;
     }
 
-    .secimg div.img::before, body.top section.secimg div.img::after {
+    .secimg .img::before, body.top .secimg .img::after{
         display: none;
     }
+
+    
 
     body.top section.saloninfo div.secwrap div#slide2 {
         height: 16rem;
@@ -947,12 +964,11 @@
     }
     
     
-    body.top section.secimg div.img {
-        height: 10rem;
-    }
     
-    .secimg div.img::before, body.top section.secimg div.img::after {
-        display: none;
+    
+    .secimg div.img div.imgwrap {
+        background: url(./images/secming.png) center top no-repeat;
+        background-size: 100%;
     }
     
     body.top section.saloninfo div.secwrap div#slide2 {

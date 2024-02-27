@@ -330,10 +330,14 @@ section_mv
     height: 64vh;
 }
 
+.triming.b{
+    margin-bottom: 10%;
+    right: -12%;
+}
 
-
-#slide div.triming.t {
-    top: 0;
+.triming.t{
+    margin-top: -12%;
+    left: -12%;
 }
 
 #slide div.triming {
@@ -341,8 +345,6 @@ section_mv
     width: 26.25%;
     max-width: 314px;
 }
-
-
 
 
 body.load.top section.mv div.secwrap_b div#slide div.triming::before {
@@ -355,6 +357,10 @@ body.load.top section.mv div.secwrap_b div#slide div.triming::before {
     opacity: 1;
     transform: translate3d(-110px, -110px, 0px) rotate(45deg);
     
+}
+
+.triming.t {
+    top: 0;
 }
 
 
@@ -449,7 +455,7 @@ body.load.top section.mv div.secwrap_b div#slide div.triming::before {
     text-align: right;
   }
 
-#home .tagline  h2 span::before {
+#home .tagline h2 span::before {
     display: none;
 }
 
@@ -852,11 +858,11 @@ section_class_secimg
 .secimg div.img div.imgwrap {
     width: 100%;
     height: 100%;
-    background: url(./images/secming.webp) center center no-repeat;
+    background: url(./images/secming.png) center center no-repeat;
     background-size: cover;
 }
 
-.secimg div.img::before, body.top .secimg div.img::after {
+.secimg .img::before, body.top .secimg .img::after {
     content: "";
     display: block;
     position: absolute;
@@ -869,16 +875,14 @@ section_class_secimg
     -webkit-transform-origin: center center;
 }
 
-.secimg div.img::before {
+.secimg .secwrap div.img::before {
     top: 0;
     margin-top: calc( calc( 17.675% / -2));
     left: calc( calc( 17.675% / -2));
     transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
 }
 
-.secimg div.img::after {
+.secimg .secwrap div.img::after {
     bottom: 0;
     margin-bottom: calc( calc( 17.675% / -2));
     right: calc( calc( 17.675% / -2));
@@ -990,18 +994,6 @@ body.top section.saloninfo div.secwrap div.txt {
     -webkit-transform-origin: center center;
 }
 
-.secimg div.img::before, body.top section.secimg div.img::after {
-    content: "";
-    display: block;
-    position: absolute;
-    background-color: #fff;
-    width: 17.675%;
-    padding-top: 17.675%;
-    z-index: 3;
-    transform-origin: center center;
-    -moz-transform-origin: center center;
-    -webkit-transform-origin: center center;
-}
 
 .saloninfo div.secwrap div#slide2::before {
     top: 0;
