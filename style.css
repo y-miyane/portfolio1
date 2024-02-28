@@ -797,12 +797,12 @@ img {
 }
 .liwrap:hover .img1,
 .liwrap.hovered .img1 {
-    transform: translate(16px, 16px);
+    transform: translate(10px, 10px);
 }
   
 .liwrap:hover .txt,
 .liwrap.hovered .txt {
-    transform: translate(16px, 16px);
+    transform: translate(10px, 10px);
 }
 
 h3{
