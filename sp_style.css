@@ -291,13 +291,13 @@
     }
 
     .triming.b {
-        margin-bottom: 15%;
-        right: -16%;
+        margin-bottom: 14%;
+        right: -20%;
     }
 
     .triming.t {
-        margin-top: -16%;
-        left: -16%;
+        margin-top: -20%;
+        left: -20%;
     }
 
     body.top section.mv div.secwrap_b {
@@ -749,7 +749,7 @@
     }
     
     .triming.b {
-        margin-bottom: 21%;
+        margin-bottom: 14%;
         right: -16%;
     }
     
