@@ -901,7 +901,7 @@ section_class_saloninfo
 
 #slide2 {
     width: 75%;
-    height: 560px;
+    height: 40rem;
     margin-left: auto;
     margin-right: 0;
     overflow: hidden;
@@ -961,7 +961,7 @@ body.top section.saloninfo div.secwrap div.txt {
 
 .saloninfo div.secwrap div.btn {
     position: absolute;
-    bottom: 32px;
+    bottom: 2rem;
     right: 0;
 }
 
@@ -1021,6 +1021,8 @@ body.top section.saloninfo div.secwrap div.txt {
 .saloninfo_all:hover .btn1 div.a span {
     color: #fff
 }
+
+
 
 
 
@@ -1108,6 +1110,10 @@ section_class_style
 
 #style span::after,#blog span::after{
     display: none;
+}
+
+#saloninfo .txt p span{
+    font-size: 0.8rem;
 }
 
 

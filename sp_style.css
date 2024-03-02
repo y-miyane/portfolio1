@@ -162,7 +162,7 @@
     }
 
     body.top section.menu div.secwrap div.body ul li a div.liwrap div.txt {
-        margin-top: -3rem;
+        margin-top: -2rem;
     }
 
     body.top section.menu div.secwrap div.body ul li a div.liwrap div.txt p {
@@ -203,7 +203,7 @@
         height: 24rem;
     }
 
-    body.top section.saloninfo div.secwrap div#slide2 {
+    #slide2 {
         height: 32rem;
     }
 
@@ -967,8 +967,7 @@
     }
     
     .menu div.secwrap div.body ul li a div.liwrap div.txt {
-        top: 150px;
-        left: 0px;
+        margin-top: -3rem;
     }
     
     .img2 {
@@ -1196,6 +1195,10 @@
     
     body.top section.newsblog div.news div.txt {
         height: auto;
+    }
+
+    body.top section.newsblog div.blog div.body div.img{
+        height: 79px 
     }
     
     button.btn2 a::after, button.btn2 input[type="submit"]::after {
