@@ -20,6 +20,8 @@
         left: -16%;
     }
 
+    
+
 }
 
 
@@ -216,6 +218,10 @@
         position: absolute;
         bottom: 0;
         right: 0;
+    }
+
+    .saloninfo div.secwrap div#slide2::after {
+    bottom: 0rem;
     }
 
     body.top section.style div.secwrap_b div.ttl {
@@ -586,6 +592,8 @@
     footer div.footer_wrap p.copyright {
         margin-top: 0;
     }
+
+    
 
 }
 
@@ -1253,6 +1261,7 @@
 
 
 
+    
 
 
 
