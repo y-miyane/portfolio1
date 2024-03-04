@@ -536,7 +536,7 @@ section_concept
 
 #concept div.secwrap div.img {
     width: 75%;
-    height: 640px;
+    height: 560px;
     z-index: 2;
     position: relative;
     overflow: hidden;
@@ -969,13 +969,14 @@ body.top section.saloninfo div.secwrap div.txt {
 
 
 .ci_wrap img{
-    width: 100%;
+    width: auto;
     position: absolute;
+    height: 560px;
 }
 
 .saloninfo div.secwrap div.btn {
     position: absolute;
-    bottom: 8.5rem;
+    bottom: 5.0rem;
     right: 0;
 }
 
@@ -1019,7 +1020,7 @@ body.top section.saloninfo div.secwrap div.txt {
 }
 
 .saloninfo div.secwrap div#slide2::after {
-    bottom: 20%;
+    bottom: 12%;
     margin-bottom: calc( calc( 35.35% / -2));
     right: calc( calc( 35.35% / -2));
     transform: rotate(45deg);

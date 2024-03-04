@@ -45,6 +45,15 @@
         display: block;
     }
 
+    header div.header_wrap div.logo {
+        position: absolute;
+        width: 100%;
+        max-width: 147px;
+        z-index: 50;
+        left: -2rem;
+        top: -2rem;
+    }
+
     header div.header_wrap div.img {
         width: 116px;
         width: 15%;
@@ -302,8 +311,8 @@
     }
 
     .triming.t {
-        margin-top: -20%;
-        left: -20%;
+        margin-top: -18%;
+        left: -18%;
     }
 
     body.top section.mv div.secwrap_b {
