@@ -629,7 +629,7 @@ h2 span:after {
 }
 
 p.lead {
-    font-size: 21.3px;
+    font-size: 1.1rem;
     line-height: 2.5;
 }
 
@@ -712,7 +712,7 @@ h2 span:before {
 
 .menu div.secwrap div.body ul li a div.liwrap div.txt {
     position: absolute;
-    top: 75%;
+    top: 73%;
     padding-right: 1rem;
     margin-top: -4rem;
     text-align: center;
@@ -722,7 +722,7 @@ h2 span:before {
 }
 
 .menu div.secwrap div.body ul li a div.liwrap div.txt p {
-    margin-top: 12px;
+    margin-top: 2rem;
 }
 
 
@@ -1220,6 +1220,7 @@ body.top section.newsblog div.news div.txt a:hover {
 
 body.top section.newsblog div.news div.txt{
     height: 235.333px;
+    font-size: 0.8rem;
 }
 
 
@@ -1364,7 +1365,7 @@ main div.totopsp p span {
 }
 
 button.btn2 a span, button.btn2 input[type="submit"] span {
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-align: left;
     line-height: 2;
     font-family: "Asap", YuGothic, "游ゴシック", "MS Ｐゴシック", "MS P Gothic", "MS-PGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, arial, helvetica, clean, sans-serif;
@@ -1394,6 +1395,11 @@ footer {
 
 .f_nav_box {
     width: 33.333%;
+    font-size: 0.8rem;
+}
+
+.f_nav_box span {
+    line-height: 2rem;
 }
 
 h4 {
@@ -1402,7 +1408,7 @@ h4 {
 
 footer div.footer_wrap div.f_nav div.f_nav_box div.txt p.opentime {
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
 }
 
@@ -1462,6 +1468,8 @@ button.ftbtn a span {
     cursor: pointer;
     opacity: 1;
     transition: opacity 400ms cubic-bezier(0.25, 0.1, 0.25, 1) 0ms;
+    padding-top: 1rem;
+    font-size: 0.7rem;
 }
 
 .textlink a:hover {
@@ -1471,6 +1479,6 @@ button.ftbtn a span {
 
 .copyright {
     text-align: center;
-    margin-top: 50px;
-    font-size: 0.8rem;
+    margin-top: 4rem;
+    font-size: 0.6rem;
 }
