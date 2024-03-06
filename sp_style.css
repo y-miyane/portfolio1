@@ -50,12 +50,15 @@
         width: 100%;
         max-width: 147px;
         z-index: 50;
-        left: -2rem;
-        top: -2rem;
+        left: 0rem;
+        top: 0rem;
+    }
+
+    .logo img {
+        width: 70%;
     }
 
     header div.header_wrap div.img {
-        width: 116px;
         width: 15%;
     }
 
@@ -105,8 +108,9 @@
     }
 
     #popupnavi .logo {
-        width: 20%;
+        width: 100%;
         display: inline;
+        position: static;
     }
 
     #popupnavi {
@@ -702,7 +706,7 @@
     
     
     #popupnavi .logo {
-        width: 30%;
+        width: 12rem;
         display: block;
         left: 34%;
     }
@@ -746,18 +750,15 @@
         line-height: 1;
     }
     
-    
     .logo img {
-        width: 84px;
-        width: 120%;
+        width: 50%;
     }
     header div.header_wrap div.logo {
         position: absolute;
-        width: 25%;
         max-width: 176px;
         z-index: 50;
-        top: -30px;
-        left: -25px;
+        top: 0px;
+        left: -10px;
     }
     
     .triming.t {
@@ -818,9 +819,9 @@
     
     body.top section.concept div.secwrap::before {
         width: 10rem;
-        height: 8rem;
+        height: 10rem;
         top: 0rem;
-        left: -0.5rem;
+        left: 0.5rem 
     }
     
     #concept div.secwrap div.img {
@@ -1028,8 +1029,8 @@
     body.top section.saloninfo div.secwrap::before {
         width: 8rem;
         height: 8rem;
-        top: 0rem;
-        right: -2rem;
+        top: 1rem;
+        right: -1rem;
     }
     
     .saloninfo div.secwrap div#slide2::after {
@@ -1153,7 +1154,7 @@
     body.top section.style div.secwrap_b::after {
         width: 28.28%;
         padding-top: 28.28%;
-        top: 4.6%;
+        top: 5.6%;
         left: 5.5%;
     }
     
