@@ -540,7 +540,7 @@
 
     body.top section.style div.secwrap_b div.ttl {
         top: 30%;
-        left: 3%;
+        left: -2%;
     }
 
     body.top section.style div.secwrap_b::after {
@@ -585,8 +585,8 @@
 
     body.top section.newsblog div.blog div.ttl {
         position: relative;
-        top: 6rem;
-        left: -20rem;
+        top: 66px;
+        left: -42%;
     }
 
     footer div.footer_wrap {
