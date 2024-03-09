@@ -245,6 +245,7 @@ header div.header_wrap div.logo {
 
 #popupnavi .hr {
     display: none;
+    width: 30%;
 }
 
   
@@ -640,7 +641,7 @@ p.lead {
     content: "";
     display: block;
     width: 100%;
-    height: 16px;
+    height: 1rem;
     background-image: url(./images/line.png);
     background-repeat: repeat-x;
 }
@@ -648,8 +649,13 @@ p.lead {
 .btn {
     text-align: right;
     width: 100%;
+    height: 5rem;
+}
+
+.concept .btn{
     height: 8rem;
 }
+
 
 .show_pctb {
     display: block;
@@ -690,15 +696,10 @@ section_class_menu
 -----------------------*/
 .secwrap div.body {
     position: relative;
-    transform: translateY(-200px); 
-}
-
-.menu .secwrap{
-    height: 31rem;
 }
 
 body.top section.menu div.secwrap div.ttl{
-    position: relative;
+    position: absolute;
     left: 0;
     top: 0;
     width: 100px;
@@ -855,6 +856,13 @@ h3{
     color: #fff
 }
 
+.menu .btn{
+    height: 8rem;
+}
+
+
+
+
 
 /*---------------------
 section_class_secimg
@@ -917,6 +925,8 @@ section_class_saloninfo
 .saloninfo {
     position: relative;
 }
+
+
 
 #slide2 {
     width: 75%;
@@ -1043,10 +1053,41 @@ body.top section.saloninfo div.secwrap div.txt {
 }
 
 .saloninfo .secwrap{
-    height: 35rem;
+    height: 32rem;
 }
 
+#slide2 .slideshow li {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    animation: slideshow 15s infinite;
+}
 
+#slide2 .slideshow li:nth-child(1) {
+    animation-delay: 0s;
+}
+
+#slide2 .slideshow li:nth-child(2) {
+    animation-delay: 8s;
+}
+
+#slide2 .slideshow li img {
+    object-fit: cover;
+    width: 100%;
+    position: absolute;
+}
+
+@keyframes slideshow {
+    0%, 100% {
+        opacity: 0;
+    }
+
+    50% {
+      opacity: 1;
+    }
+}
 
 
 /*---------------------
@@ -1071,8 +1112,8 @@ section_class_style
 .style div.secwrap_b div.ttl {
     position: absolute;
     z-index: 10;
-    top: 53%;
-    left: 3.5%;
+    top: 60%;
+    left: 2%;
     margin-bottom: 0;
     transform-origin: top left;
     -moz-transform-origin: top left;
@@ -1124,6 +1165,7 @@ section_class_style
     position: absolute;
     bottom: 0;
     right: 0;
+    height: auto;
 }
 
 .show_sp {
@@ -1317,7 +1359,7 @@ main div.totop {
     background-size: contain;
     background-position: top center;
     background-repeat: no-repeat;
-    border-left: 1px solid #000; 
+    border-left: 0.5px solid #000; 
     height: 100px;
     z-index: 999;
     visibility: hidden;
@@ -1331,7 +1373,7 @@ main div.totop {
 main div.totop.on {
     opacity: 1;
     visibility: visible;
-    bottom: 50%;
+    bottom: 30rem;
     transform: translateY(-50%) rotate(0deg);
 }
 
@@ -1466,7 +1508,7 @@ button.ftbtn a span {
 
 
 .textlink {
-    margin-top: 16px;
+    margin-top: 3rem;
 }
 
 .textlink a {

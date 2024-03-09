@@ -21,7 +21,7 @@
           <div id="popupnavi">
             <nav id="navi">
               <div class="logo">
-                <a href="/">
+                <a href="">
                   <img src="./images/logo_t.png"  alt="">
                 </a>
               </div>
@@ -317,22 +317,18 @@
           <div id="saloninfo">
             <div class="secwrap Parallax Parallax_on">
               <a href="" class="saloninfo_all">
-                <!-- <div class="img">
-                  <div class="imgwrap">
-                  </div>
-                </div> -->
                 <div id="slide2">
                   <div class="slide_wrap">
-                    <ul>
+                    <ul class="slideshow">
                       <li class="si_pic1">
-                        <div class="ci_wrap">
-                          <img src="./images/saloninfo.png" alt="">
-                        </div>
+                          <div class="ci_wrap">
+                              <img src="./images/saloninfo.png" alt="">
+                          </div>
                       </li>
                       <li class="si_pic2">
-                        <div class="ci_wrap">
-                          <img src="./images/saloninfo_2.png" alt="北欧家具で落ち着く内装になっています。">
-                        </div>
+                          <div class="ci_wrap">
+                              <img src="./images/saloninfo_2.png" alt="北欧家具で落ち着く内装になっています。">
+                          </div>
                       </li>
                     </ul>
                   </div>
@@ -674,7 +670,7 @@
       window.addEventListener('scroll', () => {
           let scrollY = window.scrollY;
 
-          if (scrollY > 5000) {
+          if (scrollY > 4000) {
               if (!isTotopVisible) {
                   $totop.classList.add('on');
                   isTotopVisible = true;
