@@ -41,8 +41,24 @@
         color: #000;
     }
 
+    header {
+        padding: 20px 30px;
+    }
+
     header div.header_wrap {
         display: block;
+    }
+
+    #home .tagline h2 {
+        margin-bottom: -2rem;
+    }
+
+    .main-text {
+        font-size: 1.8rem;
+    }
+
+    .tagline h2 p {
+        font-size: 1rem;
     }
 
     header div.header_wrap div.logo {
@@ -235,8 +251,9 @@
 
     .saloninfo div.secwrap div.btn {
         position: absolute;
-        bottom: 3rem;
+        bottom: -0.4rem;
         right: 0;
+        height: auto;
     }
 
     .saloninfo div.secwrap div#slide2::after {
@@ -264,10 +281,8 @@
     }
 
     body.top section.newsblog div.blog div.ttl {
-        position: relative;
+        position: absolute;
         z-index: 10;
-        top: 7rem;
-        left: 3rem 
     }
 
     h2 span::before {
@@ -288,17 +303,32 @@
     }
 
 
+    .secwrap2 button.btn2 {
+        margin-top: 4rem;
+    }
+
+    body.top section.newsblog div.news div.txt {
+        height: auto;
+        font-size: 1rem;
+    }
+
+
 
     footer div.footer_wrap {
         padding-left: 4rem;
         padding-right: 4rem;
         width: 100%;
     }
+    .f_nav_box span {
+        font-size: 1rem;
+    }
 
-    
+    .opentime span{
+        font-size: 1.5rem;
+    }
 
-    .textlink {
-        margin-top: 4rem;
+    .copyright {
+        font-size: 0.8rem;
     }
 }
 
@@ -364,6 +394,10 @@
 
     body.top h2 span {
         font-size: 1.5rem;
+    }
+
+    #home .tagline h2 {
+        margin-bottom: -2rem;
     }
 
     body.top section.concept div.secwrap div.txt p.lead {
@@ -461,6 +495,7 @@
         margin-left: auto;
         margin-right: auto;
         margin-top: 4rem;
+        height: auto;
     }
 
 
@@ -605,12 +640,6 @@
 
     body.top section.newsblog div.btn{
         height: auto;
-    }
-
-    body.top section.newsblog div.blog div.ttl {
-        position: relative;
-        top: 66px;
-        left: -42%;
     }
 
     footer div.footer_wrap {
@@ -1221,17 +1250,11 @@
         margin-bottom: 8rem;
     }
     
-    body.top section.newsblog div.blog div.ttl {
-        position: relative;
-        top: 6rem;
-        left: -42%;
-    }
     
     .secwrap_b .ttl {
         position: relative;
         top: 0;
     }
-    
     
     body.top section.newsblog div.news div.ttl {
         text-align: center;

@@ -48,8 +48,6 @@ ul {
     text-align: center;
 }
 
-
-
 /*---------------------
 header
 -----------------------*/
@@ -59,7 +57,7 @@ header {
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
-    padding: 20px 30px;
+    padding: 0 30px;
     z-index: 200;
 }
 
@@ -72,7 +70,7 @@ header .header_wrap {
 
 
 .logo img {
-    width: 100%;
+    width: 90%;
     line-height: 1px;
     margin-right: 60px;
 }
@@ -95,8 +93,8 @@ header div.header_wrap div.logo {
     width: 80%;
     max-width: 176px;
     z-index: 50;
-    left: 3rem;
-    top: 1rem;
+    left: 1rem;
+    top: 2rem;
 }
 
 .gnav_tc ul {
@@ -457,13 +455,14 @@ body.top .tagline span::after{
     display: none;
 }
 
-.tagline h2 {
+#home .tagline h2 {
     text-align: right; 
+    margin-bottom: 1rem;
 }
 
 .tagline h2 p {
-    margin-top: 1rem; 
-    line-height: 1.3; 
+    margin-top: 2rem; 
+    line-height: 1.6; 
     font-size: 0.8rem;
 }
 
@@ -649,7 +648,6 @@ p.lead {
 .btn {
     text-align: right;
     width: 100%;
-    height: 5rem;
 }
 
 .concept .btn{
@@ -993,6 +991,7 @@ body.top section.saloninfo div.secwrap div.txt {
     position: absolute;
     bottom: 0;
     right: 0;
+    height: 5rem;
 }
 
 .saloninfo div.secwrap::before {
@@ -1177,7 +1176,9 @@ section_class_style
 }
 
 #saloninfo .txt p span{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.03em;
+    line-height: 2.2;
 }
 
 
@@ -1452,7 +1453,8 @@ footer {
 }
 
 h4 {
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
+    font-size: 1rem;
 }
 
 footer div.footer_wrap div.f_nav div.f_nav_box div.txt p.opentime {
@@ -1506,10 +1508,6 @@ button.ftbtn a span {
     color: #fff; 
 }
 
-
-.textlink {
-    margin-top: 3rem;
-}
 
 .textlink a {
     display: inline-block;
