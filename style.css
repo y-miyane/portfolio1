@@ -989,9 +989,8 @@ body.top section.saloninfo div.secwrap div.txt {
 
 .saloninfo div.secwrap div.btn {
     position: absolute;
-    bottom: 0;
+    bottom: -0.4rem;
     right: 0;
-    height: 5rem;
 }
 
 .saloninfo div.secwrap::before {
@@ -1051,9 +1050,6 @@ body.top section.saloninfo div.secwrap div.txt {
     color: #fff
 }
 
-.saloninfo .secwrap{
-    height: 32rem;
-}
 
 #slide2 .slideshow li {
     width: 100%;
@@ -1350,34 +1346,30 @@ button.btn2:hover input[type="submit"]::after {
 
 
 main div.totop {
-    position: fixed;
-    cursor: pointer;
-    display: block;
-    bottom: 0rem;
-    right: 0rem;
-    height: 6rem;
-    width: 3rem;
-    background-size: contain;
-    background-position: top center;
-    background-repeat: no-repeat;
-    border-left: 0.5px solid #000; 
-    height: 100px;
-    z-index: 999;
-    visibility: hidden;
-    opacity: 0;
-    transform-origin: center center;
-    transform: rotate(0deg);
-    transition: opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0ms, visibility 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0ms;
+    width: 80px;
+    height: 8px;
+    border-bottom: 0.5px solid #000;
+    border-right: 0.5px solid #000;
+    transform: skew(45deg);
+    transition: opacity 3s cubic-bezier(0.25, 0.1, 0.25, 1) 0ms, visibility 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0ms;
    
 }
 
-main div.totop.on {
+main div.totop_cover.on {
     opacity: 1;
     visibility: visible;
-    bottom: 30rem;
-    transform: translateY(-50%) rotate(0deg);
+    bottom: 40rem;
 }
 
+.totop_cover{
+    cursor: pointer;
+    display: block;
+    transform: rotate(270deg);
+    width: 100px;
+    position: fixed;
+    right: -0.5rem;
+    transition: opacity 3s ease, visibility .3s ease;
+}
 
 
 .totopsp {

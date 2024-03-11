@@ -500,7 +500,9 @@
             </div>
           </div>
         </section>
-        <div class="totop"  onclick="scrollToSection('header')"></div>
+        <div class="totop_cover">
+          <div class="totop"  onclick="scrollToSection('header')"></div>
+        </div>
         <div class="totopsp">
           <div class="icon" onclick="scrollToSection('header')">
           </div>
@@ -625,14 +627,14 @@
       ScrollReveal({ 
         reset: true,
         distance:"20px",
-        duration: 2000,
-        delay:100,
+        duration: 1000,
+        delay:50,
        });
-      ScrollReveal().reveal('.concept', { delay: 100, origin:"bottom"});
-      ScrollReveal().reveal('.menu .body', { delay: 100, origin:"bottom"});
-      ScrollReveal().reveal('.saloninfo', { delay: 100, origin:"bottom"});
-      ScrollReveal().reveal('.saloninfo', { delay: 100, origin:"bottom"});
-      ScrollReveal().reveal('.style', { delay: 100, origin:"bottom"});
+      ScrollReveal().reveal('.concept', { delay: 50, origin:"bottom"});
+      ScrollReveal().reveal('.menu .body', { delay: 50, origin:"bottom"});
+      ScrollReveal().reveal('.saloninfo', { delay: 50, origin:"bottom"});
+      ScrollReveal().reveal('.saloninfo', { delay: 50, origin:"bottom"});
+      ScrollReveal().reveal('.style', { delay: 50, origin:"bottom"});
       ScrollReveal().reveal('.newsblog', { delay: 50, duration: 1000, distance:"0", origin:"bottom"});
 
   
@@ -664,7 +666,7 @@
         }
       }
 
-      const $totop = document.querySelector('.totop');
+      const $totop_cover = document.querySelector('.totop_cover');
       let isTotopVisible = false;
 
       window.addEventListener('scroll', () => {
@@ -672,19 +674,17 @@
 
           if (scrollY > 4000) {
               if (!isTotopVisible) {
-                  $totop.classList.add('on');
+                  $totop_cover.classList.add('on');
                   isTotopVisible = true;
-                  $totop.style.bottom = '500px';
               }
           } else if (scrollY < 1500) {
               if (isTotopVisible) {
-                  $totop.classList.remove('on');
+                  $totop_cover.classList.remove('on');
                   isTotopVisible = false;
               }
-          } else {
-              $totop.style.bottom = Math.max(0, 1500 - scrollY) + 'px';
           }
       });
+
 
       function scrollToSection(header) {
         var targetSection = document.getElementById(header);
