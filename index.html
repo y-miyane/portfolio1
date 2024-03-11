@@ -666,24 +666,17 @@
         }
       }
 
-      const $totop_cover = document.querySelector('.totop_cover');
-      let isTotopVisible = false;
-
+      const totopcover = document.querySelector('.totop_cover');
+      
       window.addEventListener('scroll', () => {
           let scrollY = window.scrollY;
 
           if (scrollY > 4000) {
-              if (!isTotopVisible) {
-                  $totop_cover.classList.add('on');
-                  isTotopVisible = true;
-              }
+              totopcover.classList.add('on');
           } else if (scrollY < 1500) {
-              if (isTotopVisible) {
-                  $totop_cover.classList.remove('on');
-                  isTotopVisible = false;
-              }
+                  totopcover.classList.remove('on');
           }
-      });
+        });
 
 
       function scrollToSection(header) {

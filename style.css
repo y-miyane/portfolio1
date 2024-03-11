@@ -1351,14 +1351,13 @@ main div.totop {
     border-bottom: 0.5px solid #000;
     border-right: 0.5px solid #000;
     transform: skew(45deg);
-    transition: opacity 3s cubic-bezier(0.25, 0.1, 0.25, 1) 0ms, visibility 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0ms;
    
 }
 
 main div.totop_cover.on {
-    opacity: 1;
-    visibility: visible;
     bottom: 40rem;
+    opacity: 1;
+    visibility: inherit;
 }
 
 .totop_cover{
@@ -1368,13 +1367,16 @@ main div.totop_cover.on {
     width: 100px;
     position: fixed;
     right: -0.5rem;
-    transition: opacity 3s ease, visibility .3s ease;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.8s;
 }
 
 
 .totopsp {
     display: none;
     bottom: 2rem;
+
 }
 
 main div.totopsp div.icon {
