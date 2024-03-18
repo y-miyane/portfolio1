@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./sp_style.css">
+    <script src="./jquery-3.7.1.min.js"></script>
+
   </head>
   <body class="page-index top load">
     <div id="wrapAll">
@@ -666,17 +668,19 @@
         }
       }
 
-      const totopcover = document.querySelector('.totop_cover');
-      
-      window.addEventListener('scroll', () => {
-          let scrollY = window.scrollY;
-
-          if (scrollY > 4000) {
-              totopcover.classList.add('on');
-          } else if (scrollY < 1500) {
-                  totopcover.classList.remove('on');
+      $(document).ready(function () {
+      $(".totop_cover").hide();
+      $(window).on("scroll", function () {
+          scrollHeight = $(document).height(); 
+          scrollPosition = $(window).height() + $(window).scrollTop(); 
+          footHeight = $("footer").innerHeight(); 
+          if (scrollHeight - scrollPosition <= footHeight) { 
+            $(".totop_cover").css({ position: "absolute", bottom: footHeight + 0 }); 
+          } else { 
+            $(".totop_cover").css({ position: "fixed", bottom: "0" }); 
           }
         });
+      });
 
 
       function scrollToSection(header) {

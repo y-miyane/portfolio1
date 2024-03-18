@@ -1351,13 +1351,9 @@ main div.totop {
     border-bottom: 0.5px solid #000;
     border-right: 0.5px solid #000;
     transform: skew(45deg);
-   
-}
-
-main div.totop_cover.on {
-    bottom: 40rem;
     opacity: 1;
     visibility: inherit;
+    transition: opacity 0.8s;
 }
 
 .totop_cover{
@@ -1367,9 +1363,8 @@ main div.totop_cover.on {
     width: 100px;
     position: fixed;
     right: -0.5rem;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.8s;
+    bottom: 40rem;
+    
 }
 
 
