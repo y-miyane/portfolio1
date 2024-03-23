@@ -549,7 +549,7 @@ section_concept
     content: "";
     width: 20rem;
     height: 20rem;
-    background: url(./images/tri_line.png) center center no-repeat;
+    background: url(./images/tri.svg) center center no-repeat;
     background-size: cover;
     top: 1rem;
     left: -1rem;
@@ -998,7 +998,7 @@ body.top section.saloninfo div.secwrap div.txt {
     content: "";
     width: 20rem;
     height: 20rem;
-    background: url(./images/tri_line.png) center center no-repeat;
+    background: url(./images/tri.svg) center center no-repeat;
     background-size: cover;
     top: 0rem;
     right: -3rem;
@@ -1346,30 +1346,22 @@ button.btn2:hover input[type="submit"]::after {
 
 
 main div.totop {
-    width: 80px;
-    height: 8px;
-    border-bottom: 0.5px solid #000;
-    border-right: 0.5px solid #000;
-    transform: skew(45deg);
-}
-
-main div.totop_cover.on {
-    opacity: 1;
-    visibility: visible;
-    bottom: 600px;
-    transition: opacity 1s, visibility 1s; 
-}
-
-.totop_cover {
+    position: fixed;
     cursor: pointer;
     display: block;
-    transform: rotate(270deg);
-    width: 100px;
-    position: fixed;
-    right: -0.5rem;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 1s, visibility 1s;
+    bottom: 0rem;
+    right: 0rem;
+    height: 6rem;
+    width: 6rem;
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-image: url(./images/arr_link_b.svg);
+    z-index: 999;
+    transform-origin: center center;
+    transform: rotate(0deg);
+    transition: opacity 400ms cubic-bezier(0.25, 0.1, 0.25, 1) 0ms, visibility 400ms cubic-bezier(0.25, 0.1, 0.25, 1) 0ms;
+    
 }
 
 
