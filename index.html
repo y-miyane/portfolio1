@@ -668,19 +668,31 @@
         }
       }
 
-      $(document).ready(function () {
-      $(".totop_cover").hide();
-      $(window).on("scroll", function () {
-          scrollHeight = $(document).height(); 
-          scrollPosition = $(window).height() + $(window).scrollTop(); 
-          footHeight = $("footer").innerHeight(); 
-          if (scrollHeight - scrollPosition <= footHeight) { 
-            $(".totop_cover").css({ position: "absolute", bottom: footHeight + 0 }); 
-          } else { 
-            $(".totop_cover").css({ position: "fixed", bottom: "0" }); 
+      const totopcover = document.querySelector('.totop_cover');
+      const footerHeight = document.querySelector('footer').offsetHeight;
+
+      window.addEventListener('scroll', () => {
+          let scrollY = window.scrollY;
+
+          if (scrollY > 4500) {
+              totopcover.classList.add('on');
+          } else if (scrollY < 1500) {
+              totopcover.classList.remove('on');
           }
-        });
+
+          const windowHeight = window.innerHeight;
+          const documentHeight = document.documentElement.scrollHeight;
+
+          if (scrollY + windowHeight >= documentHeight - footerHeight) {
+              totopcover.style.position = 'fixed';
+              totopcover.style.bottom = `${footerHeight}px`;
+          } else {
+              totopcover.style.position = 'fixed';
+              totopcover.style.bottom = '60px'; 
+          }
       });
+
+
 
 
       function scrollToSection(header) {
