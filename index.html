@@ -624,6 +624,7 @@
       </div>
       </footer>
     </div> 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
       ScrollReveal({ 
@@ -674,9 +675,7 @@
         $(window).scroll(function () {
           if ($(this).scrollTop() > 4500) {
             totop.fadeIn();
-          } else {
-            totop.fadeOut();
-          }
+          } 
         });
         totop.click(function () {
           $("body,html").animate(
@@ -687,17 +686,17 @@
           );
           return false;
         });
-        // フッター手前でストップ
+        
         $(".totop").hide();
         $(window).on("scroll", function () {
           scrollHeight = $(document).height();
           scrollPosition = $(window).height() + $(window).scrollTop();
           footHeight = $("footer").innerHeight();
           if (scrollHeight - scrollPosition <= footHeight) {
-        // ページトップボタンがフッター手前に来たらpositionとfixedからabsoluteに変更
+        
             $(".totop").css({
               position: "absolute",
-              bottom: footHeight,
+              bottom: "-208px",
             });
           } else {
             $(".totop").css({
@@ -741,6 +740,5 @@
 
       
     </script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   </body>
 </html>  

@@ -547,12 +547,12 @@ section_concept
 .concept div.secwrap::before {
     position: absolute;
     content: "";
-    width: 20rem;
-    height: 20rem;
+    width: 18rem;
+    height: 18rem;
     background: url(./images/tri.svg) center center no-repeat;
     background-size: cover;
     top: 1rem;
-    left: -1rem;
+    left: 1rem;
     z-index: 10;
 }
 

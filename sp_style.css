@@ -162,9 +162,9 @@
     }
 
     body.top section.concept div.secwrap::before {
-        width: 16rem;
-        height: 16rem;
-        top: -1rem 
+        width: 15rem;
+        height: 15rem;
+        top: 1rem 
     }
 
     #concept div.secwrap div.img {
@@ -366,14 +366,11 @@
     body.top section.concept div.secwrap::before {
         width: 8rem;
         height: 8rem;
-        top: 0.5rem;
-        left: 0.5rem;
+        top: 0rem;
+        left: 0rem;
     }
 
-    body.top section.concept div.secwrap::before {
-        width: 16rem;
-        height: 16rem;
-    }
+    
 
     #concept div.secwrap div.img {
         height: 16rem;
@@ -610,7 +607,7 @@
         content: "";
         width: 20%;
         height: 90%;
-        background: url(./images/tri_line.png) center center no-repeat;
+        background: url(./images/tri.svg) center center no-repeat;
         background-size: cover;
         top: 1rem;
         right: -1rem;
