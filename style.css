@@ -823,6 +823,11 @@ img {
     transform: translate(15px, 15px);
 }
 
+.menu_2 .img1,.menu_3 .img1{
+    top: 4px;
+    right: -2.3px;
+}
+
 h3{
     font-size: 24px;
     font-weight: bold;
@@ -1360,7 +1365,6 @@ main div.totop {
     z-index: 999;
     transform-origin: center center;
     transform: rotate(0deg);
-    transition: opacity 400ms cubic-bezier(0.25, 0.1, 0.25, 1) 0ms, visibility 400ms cubic-bezier(0.25, 0.1, 0.25, 1) 0ms;
     
 }
 

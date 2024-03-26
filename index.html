@@ -196,7 +196,7 @@
               </div>
               <div class="body">
                   <ul class="row r2">
-                    <li class="Parallax Parallax_on">
+                    <li class="menu_1">
                       <a href="">
                         <div class="liwrap" onmouseover="addHoverClass(this)" onmouseout="removeHoverClass(this)">
                           <div class="img">
@@ -220,7 +220,7 @@
                         </div>
                       </a>
                     </li>
-                    <li class="Parallax Parallax_on">
+                    <li class="menu_2">
                       <a href="">
                         <div class="liwrap">
                           <div class="img">
@@ -244,7 +244,7 @@
                         </div>
                       </a>
                     </li>
-                    <li class="Parallax Parallax_on">
+                    <li class="menu_3">
                       <a href="">
                         <div class="liwrap">
                           <div class="img">
@@ -268,7 +268,7 @@
                         </div>
                       </a>
                     </li>
-                    <li class="Parallax Parallax_on">
+                    <li class="menu_4">
                       <a href="">
                         <div class="liwrap">
                           <div class="img">
@@ -669,13 +669,58 @@
         }
       }
 
+      if (window.matchMedia("(max-width: 960px)").matches) {
+        $(function () {
+        const totop = $(".totop");
+        totop.hide();
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+            totop.fadeIn();
+          } else if ($(this).scrollTop() < 100 ) {
+          totop.fadeOut();
+          }
+        });
+        totop.click(function () {
+          $("body,html").animate(
+            {
+              scrollTop: 0,
+            },
+            500
+          );
+          return false;
+        });
+        
+        $(".totop").hide();
+        $(window).on("scroll", function () {
+          scrollHeight = $(document).height();
+          scrollPosition = $(window).height() + $(window).scrollTop();
+          footHeight = $("footer").innerHeight();
+          if (scrollHeight - scrollPosition <= footHeight) {
+        
+            $(".totop").css({
+              position: "absolute",
+              bottom: "308px",
+            });
+          } else {
+            $(".totop").css({
+              position: "fixed",
+              bottom: "0",
+            });
+          }
+        });
+      });
+
+      }else{
+
       $(function () {
         const totop = $(".totop");
         totop.hide();
         $(window).scroll(function () {
-          if ($(this).scrollTop() > 4500) {
+          if ($(this).scrollTop() > 4000) {
             totop.fadeIn();
-          } 
+          } else if ($(this).scrollTop() < 1000 ) {
+          totop.fadeOut();
+          }
         });
         totop.click(function () {
           $("body,html").animate(
@@ -706,7 +751,9 @@
           }
         });
       });
+      }
 
+      
 
 
       function scrollToSection(header) {
