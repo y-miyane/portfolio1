@@ -227,6 +227,16 @@
         font-size: 1.3rem;
     }
 
+    .menu_2 .img1, .menu_3 .img1 {
+        top: -1px;
+        right: 3.7px;
+    }
+
+    .menu_1 .img1, .menu_4 .img1 {
+        top: -4px;
+        right: 4px;
+    }
+
     .secwrap div.body {
         position: relative;
     }
