@@ -1288,7 +1288,7 @@
     }
     
     main div.totop {
-        display: none;
+        display: none !important;
     }
     
     main div.totopsp {

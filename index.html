@@ -698,13 +698,13 @@
           if (scrollHeight - scrollPosition <= footHeight) {
         
             $(".totop").css({
-               bottom: footHeight - (scrollHeight - scrollPosition),
+               bottom: `calc(${footHeight}px - (${scrollHeight}px - ${scrollPosition}px) - 50px)`,
                display: "block",
             });
           } else {
             $(".totop").css({
               position: "fixed",
-              bottom: "0",
+              bottom: "30px",
               
             });
           }
