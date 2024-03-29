@@ -1362,7 +1362,7 @@ main div.totop {
     background-position: top center;
     background-repeat: no-repeat;
     background-image: url(./images/arr_link_b.svg);
-    z-index: 999;
+    z-index: 0;
     transform-origin: center center;
     transform: rotate(0deg);
     
@@ -1426,8 +1426,8 @@ footer {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .f_nav {
@@ -1440,12 +1440,12 @@ footer {
 }
 
 .f_nav_box span {
-    line-height: 2rem;
+    line-height: 1.5rem;
 }
 
 h4 {
     margin-bottom: 2rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 footer div.footer_wrap div.f_nav div.f_nav_box div.txt p.opentime {
@@ -1467,9 +1467,54 @@ footer div.footer_wrap div.f_nav div.f_nav_box div.txt div.btn button.ftbtn {
 }
 
 .footer_wrap .logo_img img{
-    width: 10%;
+    width: 8%;
 }
 
+footer div.footer_wrap div.f_nav div.f_nav_box div.txt p.sns {
+    margin-top: 0.5rem;
+}
+
+footer div.footer_wrap div.f_nav div.f_nav_box div.txt p.sns a span.fb {
+    background: url(./images/fb.svg) no-repeat;
+}
+
+footer div.footer_wrap div.f_nav div.f_nav_box div.txt p.sns a span.in {
+    background: url(./images/in.svg) no-repeat;
+}
+
+.sns a:last-child {
+    border-bottom: 0;
+}
+
+footer div.footer_wrap div.f_nav div.f_nav_box div.txt p.sns a span::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 1rem;
+    background-size: cover;
+    background-position: center center;
+}
+
+footer div.footer_wrap div.f_nav div.f_nav_box div.txt div.btn button.ftbtn a span::before {
+    content: "";
+    display: inline-block;
+    margin-bottom: -4px;
+    padding-left: 2rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-size: contain !important;
+    background-position: center;
+    background-repeat: no-repeat !important;
+}
+
+footer div.footer_wrap div.f_nav div.f_nav_box div.txt div.btn button.ftbtn a.tel span::before {
+    background: url(./images/tel.svg) no-repeat;
+}
+
+footer div.footer_wrap div.f_nav div.f_nav_box div.txt div.btn button.ftbtn .hb span::before {
+    display: none;
+}
 
 
 .btn button.ftbtn a {
@@ -1486,7 +1531,7 @@ button.ftbtn a span {
     font-weight: bold;
     color: #000;
     letter-spacing: 0.08em;
-    line-height: 1.4rem;
+    line-height: 1rem;
     padding: 1rem 0;
     display: block;
 }
@@ -1517,6 +1562,6 @@ button.ftbtn a span {
 
 .copyright {
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 3rem;
     font-size: 0.6rem;
 }
