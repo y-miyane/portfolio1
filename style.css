@@ -265,6 +265,28 @@ header div.header_wrap div.logo {
     padding-bottom: 5px;
 }
 
+#navi .nav_menu .sns a {
+    display: inline-block;
+    width: auto;
+}
+
+#navi .nav_menu p.sns a:first-child {
+    margin-right: 1rem;
+}
+
+#navi .nav_menu .sns a img {
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+#navi .nav_menu .sns a img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
 #popupnavi .btn {
     display: none;
     text-align: center;
@@ -304,6 +326,12 @@ header div.header_wrap div.logo {
 #navi .nav_menu li a:hover {
     border-bottom: 2px solid #000; 
 }
+
+#navi .nav_menu .sns a:hover {
+    border-bottom-color: transparent;
+    transition: none;
+}
+
 
 
 

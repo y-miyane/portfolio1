@@ -35,6 +35,16 @@
                 <li><a href="#style">STYLE</a></li>
                 <li><a href="#blog">BLOG</a></li>
                 <li><a href="#reserve">RESERVE</a></li>
+                <li>
+                  <p class="sns">
+                    <a href="#home">
+                      <img src="./images/fb.svg" alt="">
+                    </a>
+                    <a href="#home">
+                      <img src="./images/in.svg" alt="">
+                    </a>
+                  </p>
+                </li>
               </ul>
               <div class="btn">
                 <button class="ftbtn">
@@ -634,7 +644,10 @@
         delay:50,
        });
       ScrollReveal().reveal('.concept', { delay: 50, origin:"bottom"});
-      ScrollReveal().reveal('.menu .body', { delay: 50, origin:"bottom"});
+      ScrollReveal().reveal('.menu_1', { delay: 50, origin:"bottom"});
+      ScrollReveal().reveal('.menu_2', { delay: 50, origin:"bottom"});
+      ScrollReveal().reveal('.menu_3', { delay: 50, origin:"bottom"});
+      ScrollReveal().reveal('.menu_4', { delay: 50, origin:"bottom"});
       ScrollReveal().reveal('.saloninfo', { delay: 50, origin:"bottom"});
       ScrollReveal().reveal('.saloninfo', { delay: 50, origin:"bottom"});
       ScrollReveal().reveal('.style', { delay: 50, origin:"bottom"});
@@ -698,7 +711,7 @@
           if (scrollHeight - scrollPosition <= footHeight) {
         
             $(".totop").css({
-               bottom: `calc(${footHeight}px - (${scrollHeight}px - ${scrollPosition}px) - 50px)`,
+               bottom: `calc(${footHeight}px - (${scrollHeight}px - ${scrollPosition}px) - 40px)`,
                display: "block",
             });
           } else {

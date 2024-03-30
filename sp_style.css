@@ -114,6 +114,11 @@
         -webkit-transform-origin: center center;
     }
 
+    #navi .nav_menu li a:hover {
+        border-bottom-color: transparent;
+        transition: none; 
+    }
+
     .triming.t {
         margin-top: -16%;
         left: -16%;
@@ -330,7 +335,7 @@
         width: 100%;
     }
     .f_nav_box span {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .opentime span{
