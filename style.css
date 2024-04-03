@@ -1468,7 +1468,7 @@ footer {
 }
 
 .f_nav_box span {
-    line-height: 1.5rem;
+    line-height: 2rem;
 }
 
 h4 {
@@ -1496,6 +1496,11 @@ footer div.footer_wrap div.f_nav div.f_nav_box div.txt div.btn button.ftbtn {
 
 .footer_wrap .logo_img img{
     width: 8%;
+}
+
+footer div.footer_wrap div.f_nav div.f_nav_box div.txt p.sns a span{
+    display: inline-block;
+    line-height: 0;
 }
 
 footer div.footer_wrap div.f_nav div.f_nav_box div.txt p.sns {

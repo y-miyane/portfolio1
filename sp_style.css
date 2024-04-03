@@ -327,6 +327,16 @@
         font-size: 1rem;
     }
 
+    footer div.footer_wrap div.f_nav div.f_nav_box div.txt p.sns a span::before {
+        content: "";
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin-right: 1rem;
+        background-size: cover;
+        background-position: center center;
+    }
+
 
 
     footer div.footer_wrap {
@@ -335,7 +345,7 @@
         width: 100%;
     }
     .f_nav_box span {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .opentime span{
