@@ -370,6 +370,35 @@
         padding: 0 1rem;
     }
 
+    #hmb {
+        right: -40px;
+    }
+
+    #hmb span {
+        width: 22px;
+    }
+
+    #hmb span:nth-child(1) {
+        top: 17px;
+    }
+
+    #hmb span:nth-child(2) {
+        top: 24px;
+    }
+
+    #hmb span:nth-child(3) {
+        top: 31px;
+    }
+
+    .active #hmb span:nth-child(1) {
+        top: 24px;
+    }
+
+    .active #hmb span:nth-child(2), .active #hmb span:nth-child(3) {
+        top: 24px;
+    }
+    
+
     .triming.b {
         margin-bottom: 14%;
         right: -20%;
@@ -382,6 +411,7 @@
 
     body.top section.mv div.secwrap_b {
         margin-bottom: 8rem;
+        margin-top: 2rem;
     }
 
     body.top section.mv div.secwrap_b div.img {
