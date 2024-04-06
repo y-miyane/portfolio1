@@ -780,6 +780,10 @@
     .active #hmb span:nth-child(2), .active #hmb span:nth-child(3) {
         top: 30px 
     }
+
+    #hmb {
+        right: 0;
+    }
     
     #popupnavi {
         width: 100%;
