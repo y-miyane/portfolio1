@@ -87,6 +87,31 @@
         display: none;
     }
 
+    .secwrap_b {
+        margin-top: 2rem;
+    }
+
+    #hmb span {
+        width: 28px;
+    }
+
+    #hmb {
+        right: -10px;
+    }
+
+    #hmb span:nth-child(1) {
+        top: 30px;
+    }
+
+    #hmb span:nth-child(2) {
+        top: 38px;
+    }
+
+    #hmb span:nth-child(3) {
+        top: 46px;
+    }
+
+
     #hmb {
         opacity: 1;
         visibility: visible;
