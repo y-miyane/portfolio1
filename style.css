@@ -172,7 +172,8 @@ header div.header_wrap div.logo {
     transition: 0.8s;
     opacity: 0;
     visibility: hidden;
-  }
+}
+
 #hmb.on{
     opacity: 1;
     visibility: inherit;
@@ -285,8 +286,6 @@ header div.header_wrap div.logo {
     margin-right: auto;
 }
 
-
-
 #popupnavi .btn {
     display: none;
     text-align: center;
@@ -314,7 +313,8 @@ header div.header_wrap div.logo {
 
 #popupnavi ul li a {
     font-size: 13px;
-    font-family: "Asap", YuGothic, "游ゴシック", "MS Ｐゴシック", "MS P Gothic", "MS-PGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, arial, helvetica, clean, sans-serif;
+    font-family: "Asap", YuGothic, "游ゴシック", "MS Ｐゴシック", "MS P Gothic", "MS-PGothic",
+                 "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, arial, helvetica, clean, sans-serif;
     color: #000;
     font-weight: 600;
     position: relative;
@@ -412,8 +412,6 @@ body.load.top section.mv div.secwrap_b div#slide div.triming::before {
     padding-top: 100%;
     z-index: 3;
 }
-
-
 
 
 #slide .fade li {
@@ -584,7 +582,8 @@ section_concept
     z-index: 10;
 }
 
-body.top section.concept div.secwrap div.img::before, body.top section.concept div.secwrap div.img::after {
+body.top section.concept div.secwrap div.img::before,
+body.top section.concept div.secwrap div.img::after {
     content: "";
     display: block;
     position: absolute;
@@ -781,7 +780,8 @@ ul.row {
 .menu div.secwrap div.body ul li:nth-child(1) {
     margin-left: 12rem;
 }
-body.top section.menu div.secwrap div.body ul li:nth-child(1), body.top section.menu div.secwrap div.body ul li:nth-child(2) {
+body.top section.menu div.secwrap div.body ul li:nth-child(1), 
+body.top section.menu div.secwrap div.body ul li:nth-child(2) {
     margin-bottom: 4rem;
 }
 
@@ -797,9 +797,11 @@ body.top section.menu div.secwrap div.body ul li:not(:nth-child(2n)) {
 a {
     color: #000;
 }
+
 a {
     text-decoration: none;
 }
+
 a {
     margin: 0;
     padding: 0;
@@ -1042,7 +1044,8 @@ body.top section.saloninfo div.secwrap div.txt {
 }
 
 
-.saloninfo div.secwrap div#slide2::before, body.top section.saloninfo div.secwrap div#slide2::after {
+.saloninfo div.secwrap div#slide2::before,
+body.top section.saloninfo div.secwrap div#slide2::after {
     content: "";
     display: block;
     position: absolute;
@@ -1397,7 +1400,6 @@ main div.totop {
 }
 
 
-
 .totopsp {
     display: none;
     bottom: 2rem;
@@ -1437,7 +1439,8 @@ button.btn2 a span, button.btn2 input[type="submit"] span {
     font-size: 0.8rem;
     text-align: left;
     line-height: 2;
-    font-family: "Asap", YuGothic, "游ゴシック", "MS Ｐゴシック", "MS P Gothic", "MS-PGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, arial, helvetica, clean, sans-serif;
+    font-family: "Asap", YuGothic, "游ゴシック", "MS Ｐゴシック", "MS P Gothic", "MS-PGothic", "ヒラギノ角ゴ Pro W3",
+                 "Hiragino Kaku Gothic Pro", Osaka, arial, helvetica, clean, sans-serif;
     transition: color 1ms cubic-bezier(0.25, 0.1, 0.25, 1) 0ms;
 }
 
